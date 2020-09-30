@@ -1,0 +1,9 @@
+{
+    "modules": true,
+    "plugins": {
+        "postcss-modules": {
+            "localsConvention": "camelCase",
+            "generateScopedName": "[local]_[hash:base64:3]"
+        }
+    }
+}
