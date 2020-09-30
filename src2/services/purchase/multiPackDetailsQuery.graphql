@@ -1,0 +1,29 @@
+query webMultiPackDetails($id: String!) {
+  details (id: $id) {
+    id
+    title
+    ... on NagraProgram {
+      channel {
+        channelName
+        nowPlaying {
+          title
+        }
+        tvChannel
+      }
+    }
+    products {
+      pack {
+        description
+        displayText
+        image
+        productId
+        purchasableUfinityProduct {
+          paymentRecurring
+          priceFinal
+          productId
+          rentalPeriod
+        }
+      }
+    }
+  }
+}

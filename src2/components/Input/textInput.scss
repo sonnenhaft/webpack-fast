@@ -1,0 +1,133 @@
+@import '~#/theme/base.scss';
+$left-padding: .5rem;
+
+@mixin base-placeholder() {
+  color: $grey-63;
+  pointer-events: none;
+  position: absolute;
+  transition: .2s ease all;
+}
+
+.input-container {
+  height: 3.5rem;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+
+  .clear-button {
+    bottom: 32%;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+
+    & svg {
+      height: 13px;
+      width: 13px;
+    }
+  }
+
+  .clear-icon {
+    fill: #eee;
+  }
+
+  .invalid-text {
+    color: $grey-63;
+    display: inline-block;
+    font-size: .65em;
+    height: 6px;
+    line-height: 0;
+    overflow: hidden;
+    padding: 10px 0 2px 6px;
+    position: relative;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    transform: translateY(-3px);
+    visibility: visible;
+    white-space: nowrap;
+    width: 14rem;
+
+    &.hidden {
+      visibility: hidden;
+    }
+  }
+
+  &.invalid {
+    .clear-icon {
+      fill: $pink;
+    }
+
+    .floating-placeholder {
+      color: $pink !important;
+    }
+
+    .input {
+      background-color: $transparent;
+      border: 1px solid $pink;
+    }
+  }
+
+  .floating-placeholder {
+    @include base-placeholder();
+
+    display: none;
+    font-family: 'DINPro-Medium', sans-serif;
+    font-size: 10px;
+    left: $left-padding;
+    padding: 4px 0;
+    top: 0;
+  }
+
+  .initial-placeholder {
+    @include base-placeholder();
+
+    font-size: 13px;
+    left: 1rem;
+    padding: 2px 0;
+    top: 16%;
+  }
+}
+
+.input {
+  background-color: $background-color;
+  border: solid 1px $grey-63;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: white;
+  font-size: .8em;
+  height: 2.7rem;
+  outline: none;
+  padding: .7rem 1.7rem 0 $left-padding;
+  position: relative;
+  width: 100%;
+
+  &.background-none {
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: solid 1px $green;
+
+    ~ .floating-placeholder {
+      color: $green;
+    }
+
+    &::placeholder {
+      color: $green;
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    ~ .floating-placeholder {
+      display: block;
+    }
+  }
+}
+
+.dob-input {
+  width: 11.4rem;
+
+  & input {
+    color: transparent;
+    text-shadow: 0 0 0 $rgb-238;
+  }
+}

@@ -1,0 +1,80 @@
+@import '~#/theme/base.scss';
+
+.video-button-controls-container {
+  @include responsive(small-screens) {
+    margin-left: 16px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  position: relative;
+
+  > div {
+    display: flex;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  .focused button {
+    border: solid 1px $player-green;
+  }
+
+  .non-hoverable-button button {
+    svg {
+      fill: $white;
+    }
+  }
+
+  button {
+    margin-right: 24px;
+
+    span.auto-button-span-style {
+      width: auto;
+    }
+
+    .black-icon-style {
+      fill: $black;
+    }
+
+    .right-margin-icon-style {
+      margin-right: 12px;
+    }
+
+    .sizing-icon-style {
+      height: 16px;
+      width: 16px;
+    }
+
+    .white-icon-style {
+      fill: $white;
+    }
+  }
+
+  .progress-bar {
+    margin-left: 1em;
+    width: 4em;
+  }
+
+  .not-supported-text {
+    margin-left: 5px;
+  }
+}
+
+.no-purchase-style {
+  @include responsive(medium-screens) {
+    max-width: 35vw;
+  }
+
+  @include responsive(small-screens) {
+    font-size: .8rem;
+    max-width: 85vw;
+  }
+
+  color: $grey-63;
+  font-size: .97rem;
+  max-width: 27vw;
+  padding: 0 0 .5rem .2rem;
+}

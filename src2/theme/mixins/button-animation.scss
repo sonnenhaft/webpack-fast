@@ -1,0 +1,25 @@
+@mixin button-animation() {
+  transition: .2s ease all;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba($black, .2);
+    transform: translateY(-3px);
+
+    &::after {
+      opacity: 0;
+      transform: scaleX(1.4) scaleY(1.6);
+    }
+  }
+
+  &:active {
+    box-shadow: 0 5px 10px rgba($black, .2);
+    transform: translateY(-1px);
+  }
+
+  &::after {
+    height: 100%;
+    transition: all .4s;
+    width: 100%;
+    z-index: -1;
+  }
+}

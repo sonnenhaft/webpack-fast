@@ -1,0 +1,10 @@
+query allChannels {
+  nagraEpg {
+    items {
+      channelId: tvChannel
+      id
+      image
+      channelName
+    }
+  }
+}

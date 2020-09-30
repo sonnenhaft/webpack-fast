@@ -1,0 +1,55 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+@mixin singleInputBorder($color) {
+  border: 1px solid $color;
+}
+
+.pin-input-container {
+  display: block;
+  margin-bottom: .6rem;
+
+  .pin-input-error-hidden {
+    visibility: hidden;
+  }
+
+  .pin-input-error-message {
+    color: $grey-63;
+    font-family: $dinpro-font;
+    font-size: .7em;
+    font-weight: lighter;
+    padding: .4rem 0;
+  }
+
+  .single-input-error {
+    @include singleInputBorder($pink);
+  }
+
+  .single-input-base {
+    @include singleInputBorder($grey-86);
+  }
+
+  .single-input-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .single-input {
+    background: $background-color;
+    border-radius: 5px;
+    color: $rgb-238;
+    font-family: $dinpro-font;
+    font-size: 1.5em;
+    font-weight: lighter;
+    height: 2.5rem;
+    margin-right: .7rem;
+    outline: none;
+    padding: .3rem .4rem;
+    text-align: center;
+    width: 1.3rem;
+
+    &:focus {
+      transform: scale(1.09);
+    }
+  }
+}

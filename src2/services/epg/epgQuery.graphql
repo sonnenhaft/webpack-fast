@@ -1,0 +1,23 @@
+query webEpg($hoursBackward: Int, $hoursForward: Int) {
+  nagraEpg {
+    items {
+      channelId: tvChannel
+      id
+      image
+      isIptvMulticast
+      isOttUnicast
+      title: description
+      programs(hoursBackward: $hoursBackward, hoursForward: $hoursForward) {
+        channel {
+          isIptvMulticast
+      		isOttUnicast
+        }
+        endTime
+        id
+        startOverSupport
+        startTime
+        title
+      }
+    }
+  }
+}

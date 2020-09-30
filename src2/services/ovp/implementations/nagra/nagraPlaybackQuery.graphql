@@ -1,0 +1,6 @@
+query nagraContentToken($contentId: String!, $device: String) {
+  nagraContentTokenData(content_id: $contentId, type: $device) {
+    expires_in
+    contentToken: content_token
+  }
+}

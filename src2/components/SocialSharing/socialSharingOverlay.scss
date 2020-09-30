@@ -1,0 +1,56 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/mixins/responsive.scss';
+@import '~#/theme/fonts.scss';
+
+.social-sharing-title {
+  color: $rgb-238;
+  font-size: 1.75em;
+  margin: 5rem 0 1.5rem;
+  text-align: center;
+}
+
+.social-sharing-icons {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin: 0 .5em;
+  }
+}
+
+.social-sharing-copy-link-section {
+  display: flex;
+  margin: 3em 5em 5.5em;
+
+  @include responsive(small-screens) {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  input {
+    background-color: $background-color;
+    border: 1px solid $grey-63;
+    border-radius: 5px;
+    color: $grey-63;
+    font-family: $dinpro-font;
+    height: 2.91em;
+    padding: 0 1em;
+    width: 350px;
+
+    @include responsive(small-screens) {
+      width: 90vw;
+    }
+  }
+
+  .social-sharing-copy-button {
+    margin-left: 1.69em;
+
+    span {
+      color: $green;
+    }
+
+    @include responsive(small-screens) {
+      margin-top: 1em;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '~#/theme/base.scss';
+
+.sign {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.title,
+.message {
+  color: $rgb-238;
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+
+  @include responsive(small-screens) {
+    font-size: 1em;
+    margin: 100px 20px 0;
+    width: auto;
+  }
+}

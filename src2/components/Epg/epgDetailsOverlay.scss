@@ -1,0 +1,126 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/zIndex.scss';
+
+.details-overlay {
+  background-color: $background-color;
+  bottom: 0;
+  height: 288px;
+  position: fixed;
+  width: 100vw;
+  z-index: $fullscreen-overlay-z-index;
+
+  .close-icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.inner-container {
+  display: flex;
+  margin: 3.125em 40px;
+}
+
+.poster-container {
+  height: 171px;
+  position: relative;
+  width: 283px;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    bottom: 9.5px;
+    left: 15px;
+    position: absolute;
+  }
+
+  .progress-bar {
+    bottom: -2px;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.title-container {
+  margin-left: 43px;
+
+  > div {
+    margin-top: 1em;
+  }
+
+  .title-text {
+    color: $rgb-238;
+    font-size: 1.56em;
+    font-weight: bold;
+    line-height: 1.43;
+  }
+
+  .rating-icon {
+    background-color: $login-section;
+    border-radius: 5px;
+    color: $grey-63;
+    display: inline-block;
+    font-size: .875em;
+    font-weight: bold;
+    margin-right: .5em;
+    padding: 0 .5em;
+  }
+
+  .genre-text {
+    color: $grey-44;
+    font-size: 1.125em;
+    line-height: 1.78;
+  }
+
+  .no-purchase-text {
+    color: $grey-44;
+    font-size: .75em;
+    margin-top: 1rem;
+    width: 17rem;
+  }
+}
+
+.description-container {
+  color: $grey-63;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 45px;
+  width: 452px;
+
+  .buttons-container {
+    display: flex;
+    margin-top: 64px;
+
+    > div:nth-child(2) {
+      margin-left: 16px;
+    }
+
+    .black-icon-style {
+      fill: $black;
+    }
+  }
+
+  .description-text {
+    height: 6.25em;
+    overflow-y: scroll;
+  }
+
+  .epg-details-overlay-spinner {
+    height: 100%;
+    width: 100%;
+  }
+
+  .not-supported-text {
+    bottom: 5em;
+    font-weight: bold;
+    position: absolute;
+  }
+}

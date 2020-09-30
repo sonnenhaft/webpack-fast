@@ -1,0 +1,52 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/themes/dark/colors.scss';
+@import '~#/theme/themes/light/colors.scss';
+$title-size: 25px;
+
+.logo-title {
+  display: inline-block;
+  flex-grow: 1;
+  font-size: $title-size;
+  height: $title-size;
+  line-height: $title-size;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo {
+  height: 42%;
+  margin: .97rem 0;
+  max-width: 8.5rem;
+}
+
+.logo-link {
+  max-width: 8.5rem;
+  z-index: 5;
+}
+
+.app-bar {
+  @include responsive(medium-screens) {
+    height: 60px;
+    min-height: 72px;
+  }
+
+  align-content: center;
+  background-color: $blue-grey;
+  display: flex;
+  height: 65px;
+  padding: 5px 5px 0 30px;
+  z-index: $app-bar-z-index;
+}
+
+.light {
+  &.app-bar {
+    background-color: $light-theme-color-lategrey;
+  }
+}
+
+.dark {
+  &.app-bar {
+    color: $dark-theme-color-bright;
+  }
+}

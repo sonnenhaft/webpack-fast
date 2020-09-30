@@ -1,0 +1,22 @@
+query webEpgCurrentDetails($id: String!) {
+  details(id: $id) {
+    duration
+    title
+    ... on LinearInterface {
+      endTime
+      startOverSupport
+      startTime
+    }
+    ... on NagraChannel {
+      nowPlaying {
+        id
+        next {
+          duration
+          id
+          rating
+          title
+        }
+      }
+    }
+  }
+}

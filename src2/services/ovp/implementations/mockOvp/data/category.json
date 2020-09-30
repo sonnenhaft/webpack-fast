@@ -1,0 +1,406 @@
+{
+  "totalCount": 37,
+  "pageSize": 50,
+  "pageNumber": 1,
+  "entries": [
+    {
+      "title": "TvShows",
+      "description": "A general category for tvshows",
+      "id": "tvshows",
+      "categories": [
+        {
+          "id": "tvshows-drama",
+          "title": "Drama",
+          "description": "Drama tvshows"
+        },
+        {
+          "id": "tvshows-comedy",
+          "title": "Comedy",
+          "description": "Comedy tvshows"
+        },
+        {
+          "id": "tvshows-reality",
+          "title": "Reality",
+          "description": "Reality tvshows"
+        },
+        {
+          "id": "tvshows-kids",
+          "title": "Kids",
+          "description": "Kids tvshows"
+        },
+        {
+          "id": "tvshows-documentary",
+          "title": "Documentary",
+          "description": "Documentary tvshows"
+        },
+        {
+          "id": "tvshows-animation",
+          "title": "Animation",
+          "description": "Animation tvshows"
+        },
+        {
+          "id": "tvshows-soap",
+          "title": "Soap",
+          "description": "Soap tvshows"
+        },
+        {
+          "id": "tvshows-news",
+          "title": "News",
+          "description": "News tvshows"
+        },
+        {
+          "id": "tvshows-family",
+          "title": "Family",
+          "description": "Family tvshows"
+        },
+        {
+          "id": "tvshows-crime",
+          "title": "Crime",
+          "description": "Crime tvshows"
+        },
+        {
+          "id": "tvshows-action-and-adventure",
+          "title": "Action & Adventure",
+          "description": "Action & Adventure tvshows"
+        },
+        {
+          "id": "tvshows-sci-fi-and-fantasy",
+          "title": "Sci-Fi & Fantasy",
+          "description": "Sci-Fi & Fantasy tvshows"
+        },
+        {
+          "id": "tvshows-mystery",
+          "title": "Mystery",
+          "description": "Mystery tvshows"
+        },
+        {
+          "id": "tvshows-talk",
+          "title": "Talk",
+          "description": "Talk tvshows"
+        },
+        {
+          "id": "tvshows-war-and-politics",
+          "title": "War & Politics",
+          "description": "War & Politics tvshows"
+        },
+        {
+          "id": "tvshows-western",
+          "title": "Western",
+          "description": "Western tvshows"
+        }
+      ]
+    },
+    {
+      "title": "Drama",
+      "description": "Drama tvshows",
+      "id": "tvshows-drama",
+      "categories": []
+    },
+    {
+      "title": "Comedy",
+      "description": "Comedy tvshows",
+      "id": "tvshows-comedy",
+      "categories": []
+    },
+    {
+      "title": "Reality",
+      "description": "Reality tvshows",
+      "id": "tvshows-reality",
+      "categories": []
+    },
+    {
+      "title": "Kids",
+      "description": "Kids tvshows",
+      "id": "tvshows-kids",
+      "categories": []
+    },
+    {
+      "title": "Documentary",
+      "description": "Documentary tvshows",
+      "id": "tvshows-documentary",
+      "categories": []
+    },
+    {
+      "title": "Animation",
+      "description": "Animation tvshows",
+      "id": "tvshows-animation",
+      "categories": []
+    },
+    {
+      "title": "Soap",
+      "description": "Soap tvshows",
+      "id": "tvshows-soap",
+      "categories": []
+    },
+    {
+      "title": "News",
+      "description": "News tvshows",
+      "id": "tvshows-news",
+      "categories": []
+    },
+    {
+      "title": "Family",
+      "description": "Family tvshows",
+      "id": "tvshows-family",
+      "categories": []
+    },
+    {
+      "title": "Crime",
+      "description": "Crime tvshows",
+      "id": "tvshows-crime",
+      "categories": []
+    },
+    {
+      "title": "Action & Adventure",
+      "description": "Action & Adventure tvshows",
+      "id": "tvshows-action-and-adventure",
+      "categories": []
+    },
+    {
+      "title": "Sci-Fi & Fantasy",
+      "description": "Sci-Fi & Fantasy tvshows",
+      "id": "tvshows-sci-fi-and-fantasy",
+      "categories": []
+    },
+    {
+      "title": "Mystery",
+      "description": "Mystery tvshows",
+      "id": "tvshows-mystery",
+      "categories": []
+    },
+    {
+      "title": "Talk",
+      "description": "Talk tvshows",
+      "id": "tvshows-talk",
+      "categories": []
+    },
+    {
+      "title": "War & Politics",
+      "description": "War & Politics tvshows",
+      "id": "tvshows-war-and-politics",
+      "categories": []
+    },
+    {
+      "title": "Western",
+      "description": "Western tvshows",
+      "id": "tvshows-western",
+      "categories": []
+    },
+    {
+      "title": "Movies",
+      "description": "A general category for movies",
+      "id": "movies",
+      "categories": [
+        {
+          "id": "movies-horror",
+          "title": "Horror",
+          "description": "Horror movies"
+        },
+        {
+          "id": "movies-war",
+          "title": "War",
+          "description": "War movies"
+        },
+        {
+          "id": "movies-animation",
+          "title": "Animation",
+          "description": "Animation movies"
+        },
+        {
+          "id": "movies-adventure",
+          "title": "Adventure",
+          "description": "Adventure movies"
+        },
+        {
+          "id": "movies-tv-movie",
+          "title": "TV Movie",
+          "description": "TV Movie movies"
+        },
+        {
+          "id": "movies-action",
+          "title": "Action",
+          "description": "Action movies"
+        },
+        {
+          "id": "movies-drama",
+          "title": "Drama",
+          "description": "Drama movies"
+        },
+        {
+          "id": "movies-comedy",
+          "title": "Comedy",
+          "description": "Comedy movies"
+        },
+        {
+          "id": "movies-romance",
+          "title": "Romance",
+          "description": "Romance movies"
+        },
+        {
+          "id": "movies-documentary",
+          "title": "Documentary",
+          "description": "Documentary movies"
+        },
+        {
+          "id": "movies-western",
+          "title": "Western",
+          "description": "Western movies"
+        },
+        {
+          "id": "movies-crime",
+          "title": "Crime",
+          "description": "Crime movies"
+        },
+        {
+          "id": "movies-mystery",
+          "title": "Mystery",
+          "description": "Mystery movies"
+        },
+        {
+          "id": "movies-fantasy",
+          "title": "Fantasy",
+          "description": "Fantasy movies"
+        },
+        {
+          "id": "movies-family",
+          "title": "Family",
+          "description": "Family movies"
+        },
+        {
+          "id": "movies-science-fiction",
+          "title": "Science Fiction",
+          "description": "Science Fiction movies"
+        },
+        {
+          "id": "movies-thriller",
+          "title": "Thriller",
+          "description": "Thriller movies"
+        },
+        {
+          "id": "movies-music",
+          "title": "Music",
+          "description": "Music movies"
+        },
+        {
+          "id": "movies-history",
+          "title": "History",
+          "description": "History movies"
+        }
+      ]
+    },
+    {
+      "title": "Horror",
+      "description": "Horror movies",
+      "id": "movies-horror",
+      "categories": []
+    },
+    {
+      "title": "War",
+      "description": "War movies",
+      "id": "movies-war",
+      "categories": []
+    },
+    {
+      "title": "Animation",
+      "description": "Animation movies",
+      "id": "movies-animation",
+      "categories": []
+    },
+    {
+      "title": "Adventure",
+      "description": "Adventure movies",
+      "id": "movies-adventure",
+      "categories": []
+    },
+    {
+      "title": "TV Movie",
+      "description": "TV Movie movies",
+      "id": "movies-tv-movie",
+      "categories": []
+    },
+    {
+      "title": "Action",
+      "description": "Action movies",
+      "id": "movies-action",
+      "categories": []
+    },
+    {
+      "title": "Drama",
+      "description": "Drama movies",
+      "id": "movies-drama",
+      "categories": []
+    },
+    {
+      "title": "Comedy",
+      "description": "Comedy movies",
+      "id": "movies-comedy",
+      "categories": []
+    },
+    {
+      "title": "Romance",
+      "description": "Romance movies",
+      "id": "movies-romance",
+      "categories": []
+    },
+    {
+      "title": "Documentary",
+      "description": "Documentary movies",
+      "id": "movies-documentary",
+      "categories": []
+    },
+    {
+      "title": "Western",
+      "description": "Western movies",
+      "id": "movies-western",
+      "categories": []
+    },
+    {
+      "title": "Crime",
+      "description": "Crime movies",
+      "id": "movies-crime",
+      "categories": []
+    },
+    {
+      "title": "Mystery",
+      "description": "Mystery movies",
+      "id": "movies-mystery",
+      "categories": []
+    },
+    {
+      "title": "Fantasy",
+      "description": "Fantasy movies",
+      "id": "movies-fantasy",
+      "categories": []
+    },
+    {
+      "title": "Family",
+      "description": "Family movies",
+      "id": "movies-family",
+      "categories": []
+    },
+    {
+      "title": "Science Fiction",
+      "description": "Science Fiction movies",
+      "id": "movies-science-fiction",
+      "categories": []
+    },
+    {
+      "title": "Thriller",
+      "description": "Thriller movies",
+      "id": "movies-thriller",
+      "categories": []
+    },
+    {
+      "title": "Music",
+      "description": "Music movies",
+      "id": "movies-music",
+      "categories": []
+    },
+    {
+      "title": "History",
+      "description": "History movies",
+      "id": "movies-history",
+      "categories": []
+    }
+  ]
+}

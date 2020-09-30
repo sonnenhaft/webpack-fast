@@ -1,0 +1,3 @@
+mutation addParentalRating($ratingCode: String!) {
+  addParentalRating(ratingCode: $ratingCode)
+}

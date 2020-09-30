@@ -1,0 +1,23 @@
+query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) {
+  nagraEpg(category: $category) {
+    items {
+      channelId: tvChannel
+      id
+      image
+      isIptvMulticast
+      isOttUnicast
+      title: description
+      programs: programsByDate(dateFrom: $dateFrom, dateTo: $dateTo) {
+        channel {
+          isIptvMulticast
+      		isOttUnicast
+        }
+        endTime
+        id
+        startOverSupport
+        startTime
+        title
+      }
+    }
+  }
+}

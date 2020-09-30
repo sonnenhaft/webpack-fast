@@ -1,0 +1,259 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/variables/ratios.scss';
+@import '~#/theme/mixins/aspectRatio.scss';
+@import '~#/theme/mixins/responsive.scss';
+@import '~#/theme/fonts.scss';
+
+@mixin progress-bar($progress-color, $background-color) {
+  background-color: $background-color;
+  border: none;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  &::-webkit-progress-value {
+    background-color: $progress-color;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $progress-color;
+  }
+}
+$hover-shadow-color: $white;
+$category-text-color: $rgb-200;
+$category-background-color: rgba(10, 20, 30, .8);
+$hero-background-color: rgba(10, 20, 30, .8);
+$asset-mask: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0),
+  rgba(23, 23, 23, .6)
+);
+
+.item-card {
+  background-color: $rgb-60;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 2px;
+  color: $white;
+  margin: 5px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-overflow: ellipsis; // NOSONAR
+  transition: .2s ease all;
+  white-space: nowrap;
+
+  &.hero-item-card {
+    background-size: cover;
+  }
+}
+
+:global(.video-js) .item-card {
+  cursor: pointer;
+}
+
+.item-card:not(.hero-banner):hover {
+  box-shadow: 0 0 0 1.5px $green;
+  transform: scale(1.11, 1.08);
+  transition: .2s ease all;
+  z-index: 15;
+}
+
+.item-card.category {
+  background-color: $category-background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-image {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-vertical,
+.hero-banner {
+  @include aspect-ratio($hero-wide);
+
+  &.item-card {
+    background-color: $hero-background-color;
+    margin: 4px;
+  }
+
+  .item-text-container .item-text {
+    @include responsive(small-screens) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    display: none;
+    font-size: 40px;
+    line-height: 46px;
+    padding: 25px;
+    padding-bottom: 0;
+  }
+}
+
+.item-text-container {
+  background: $asset-mask;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.premium-icon {
+  @include responsive(small-screens) {
+    height: .9rem;
+  }
+
+  height: 1.1rem;
+  left: 12px;
+  position: absolute;
+  top: 10px;
+  z-index: 5;
+}
+
+.view-more-item {
+  align-items: center;
+  background-color: rgb(29, 34, 37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .view-more-icon-container {
+    height: 3rem;
+  }
+
+  .view-more-icon {
+    fill: $grey-38;
+  }
+
+  &:hover {
+    background-color: rgb(53, 57, 59);
+
+    .view-more-icon {
+      fill: $rgb-215;
+    }
+
+    span {
+      color: $rgb-215;
+    }
+  }
+
+  & span {
+    color: $grey-38;
+    font-family: $regular-font;
+    font-size: .75em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transform: translateY(1rem);
+  }
+}
+
+.progress-bar {
+  @include progress-bar($green, $grey-44);
+}
+
+.item-text {
+  @include responsive(small-screens) {
+    font-size: 10px;
+    max-width: 7rem;
+  }
+
+  bottom: 13px;
+  color: $grey-86;
+  font-size: .9em;
+  font-weight: normal;
+  margin: 0;
+  max-width: 11rem;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: left;
+  text-overflow: ellipsis; // NOSONAR
+  text-shadow: 0 1px 1px $black-50;
+
+  &.player-item-text {
+    font-size: 1.6em;
+  }
+}
+
+.item-subtitle {
+  @include responsive(small-screens) {
+    font-size: 16px;
+  }
+
+  color: $rgb-200;
+  display: none;
+  font-size: .4em;
+  margin-top: 5px;
+  position: absolute;
+  text-align: left;
+}
+
+.item-cast-name,
+.item-cast-title {
+  font-weight: lighter;
+  position: absolute;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.item-cast-name {
+  color: $rgb-238;
+  font-size: 1.125em;
+  line-height: 1.78;
+  margin: 8px 0 0;
+  top: 0;
+}
+
+.item-cast-title {
+  bottom: 0;
+  color: $grey-63;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.category .item-text {
+  background: none;
+  color: $category-text-color;
+  text-transform: uppercase;
+}
+
+.item-link {
+  text-decoration: none;
+}
+
+.carousel {
+  &.portrait {
+    @include aspect-ratio($portrait-ratio);
+  }
+
+  &.wide {
+    @include aspect-ratio($landscape-ratio);
+  }
+
+  &.square {
+    @include aspect-ratio($square-ratio);
+  }
+
+  &.castcrew {
+    @include aspect-ratio($castcrew-wide-ratio);
+  }
+}
+
+.item-card.movie,
+.item-card.tvshow {
+  background-image: url('../../static/images/placeholder_movie.jpg');
+}
+
+.hero-banner-external-link {
+  text-decoration: none;
+}

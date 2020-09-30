@@ -1,0 +1,130 @@
+@import '~#/theme/base.scss';
+$menu-grey: darken($dark-grey-alt, 4%);
+
+@mixin header-button($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin header-button-hover() {
+  background: $background-color;
+}
+
+@mixin highlight-profile-button() {
+  @include header-button-hover();
+
+  .settings-icon {
+    fill: $green;
+  }
+}
+
+.header-profile-section {
+  @include responsive(medium-screens) {
+    position: absolute;
+    right: 100px;
+    top: 13px;
+  }
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  justify-content: space-between;
+  margin: auto 0;
+  padding-right: 10px;
+  transform: translateY(-1px);
+  width: 6rem;
+}
+
+.search-button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px 4px;
+
+  &:hover {
+    @include header-button-hover();
+
+    & .search-icon-menu {
+      fill: $green;
+    }
+  }
+
+  & .search-icon-menu {
+    fill: #f0f0f0;
+  }
+
+  & svg {
+    @include header-button(1.125rem);
+  }
+}
+
+.settings-button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 8px 1px;
+  position: relative;
+
+  .settings-icon {
+    @include header-button(1.563rem);
+
+    fill: #f0f0f0;
+  }
+
+  &::before {
+    content: '';
+    height: 0;
+    padding: 35%;
+    position: absolute;
+    right: -15%;
+    top: 67%;
+    width: 75%;
+  }
+
+  &.settings-button-hover:hover {
+    @include highlight-profile-button();
+
+    .settings-menu {
+      display: block;
+    }
+  }
+
+  .settings-menu {
+    @include base-menu($menu-grey);
+
+    right: 5px;
+    top: 48px;
+
+    &::before {
+      border: 6px solid transparent;
+      border-bottom: 14px solid $menu-grey;
+      border-top: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      right: 1%;
+      top: 5px;
+      transform: translate(-50%, calc(-100% - 5px));
+      width: 0;
+    }
+
+    .settings-login-button {
+      padding: 1rem 2rem;
+
+      & button {
+        margin: 0;
+        width: 13rem;
+      }
+    }
+
+    .settings-menu-item {
+      @include base-menu-item($menu-grey);
+
+      &:hover {
+        @include highlight-profile-button();
+
+        background-color: $background-color;
+        color: $green;
+      }
+    }
+  }
+}

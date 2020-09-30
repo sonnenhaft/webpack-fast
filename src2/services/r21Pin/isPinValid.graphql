@@ -1,0 +1,5 @@
+mutation isPinValid($currentPin: String) {
+  r21Pin {
+    isValid(currentPin: $currentPin)
+  }
+}

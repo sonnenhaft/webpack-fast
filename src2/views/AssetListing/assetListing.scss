@@ -1,0 +1,156 @@
+@import '~#/theme/base.scss';
+
+.page-content,
+.page-title {
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.listing-container {
+  @include responsive(medium-screens) {
+    padding: 0 1rem;
+  }
+
+  padding: 0 7rem;
+}
+
+.listing-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 1.5rem;
+  padding: 1rem 1.5rem 0;
+}
+
+.listing-title {
+  color: $rgb-238;
+  margin: 0;
+  padding: 0;
+
+  & h1 {
+    font-size: 2.4em;
+  }
+}
+
+.listing-inner-container {
+  display: flex;
+  margin: 1.5rem;
+  position: relative;
+}
+
+.full-width-listing-inner-container {
+  margin: 1.5rem .5625rem;
+}
+
+.outer-container {
+  @include responsive(small-screens) {
+    height: 62vh;
+  }
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0;
+  position: relative;
+  right: -15px;
+  top: -20px;
+  width: 75%;
+}
+
+.full-width-outer-container {
+  right: 0;
+  width: 100%;
+}
+
+.seperator {
+  @include page-seperator(1.5rem);
+}
+
+.hide-button {
+  @include responsive(small-screens) {
+    display: none;
+  }
+}
+
+.button-section-mobile {
+  @include responsive(medium-screens) {
+    display: flex;
+    margin: .6rem 1.3rem;
+  }
+
+  display: none;
+}
+
+.button-section-desktop {
+  @include responsive(medium-screens) {
+    display: none;
+  }
+
+  display: flex;
+}
+
+.categories-side-panel {
+  @include responsive(medium-screens) {
+    width: 35%;
+  }
+
+  background-color: $button-focusable-background;
+  box-shadow:
+    0 1px 5px 0 $black-20,
+    0 3px 1px -2px $black-12,
+    0 2px 2px 0 $black-14;
+  height: 100%;
+  padding-bottom: 1.8rem;
+  width: 25%;
+
+  .categories-header {
+    margin: 1.5em 0;
+
+    span {
+      color: $grey-44;
+      display: inline-block;
+      font-size: 1.5em;
+      line-height: 1.33;
+      margin-left: 1em;
+    }
+  }
+
+  .categories-side-panel-item {
+    padding: .75em 0;
+    position: relative;
+
+    span {
+      display: inline-block;
+      line-height: 2em;
+      margin: 0 .875em 0 1.5em;
+      vertical-align: middle;
+    }
+
+    &:hover,
+    &.selected-category-item {
+      background-color: $background-color;
+      cursor: pointer;
+
+      .chevron-icon-container {
+        display: block;
+      }
+    }
+  }
+}
+
+.chevron-icon-container {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.grid-spinner {
+  width: 65vw;
+}

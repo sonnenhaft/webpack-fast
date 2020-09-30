@@ -1,0 +1,42 @@
+query webPlayerRecommendations($id: String!) {
+  playerDetails(id: $id) {
+    page {
+      isMaintenance
+      pageid
+      containersData {
+        id
+        action
+        title
+        displayText
+        cardType
+        showSeeAllCard
+        template
+        rail {
+          items {
+            id
+            image
+            ...recommendationFragment
+          }
+        }
+      }
+    }
+  }
+}
+
+
+fragment recommendationFragment on Recommendable {
+  id
+  image
+  productRefs
+  title
+  duration
+  ... on VideoInterface {
+    position
+  }
+  ... on LinearInterface {
+    period {
+      start
+      end
+    }
+  }
+}

@@ -1,0 +1,3 @@
+query webAssetType($id: String!) {
+  idType (id: $id)
+}

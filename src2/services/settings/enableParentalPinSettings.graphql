@@ -1,0 +1,3 @@
+mutation enableParentalPinSettings($settingName: PinSettingEnum!) {
+  enableParentalPinSetting(settingName: $settingName)
+}

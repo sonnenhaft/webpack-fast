@@ -1,0 +1,206 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/zIndex.scss';
+@import '~#/theme/fonts.scss';
+
+:global(.vjs-subtitle-audio-selection-overlay) {
+  background-color: $background-color-90;
+  bottom: 0;
+  box-shadow:
+    0 8px 10px -5px $black-20,
+    0 6px 30px 5px $black-12,
+    0 16px 24px 2px $black-14;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  z-index: $bigger-than-subtitles-index;
+
+  &:global(.inactive) {
+    display: none;
+  }
+
+  :global(.vjs-audio-or-subtitle-selection) {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DINPro-Medium', sans-serif;
+    font-size: 24px;
+    left: 39px;
+    position: absolute;
+
+    span {
+      cursor: pointer;
+      font-family: $dinpro-font;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 8px 0 8px 16px;
+      position: relative;
+      width: 240px;
+
+      &:global(.active) {
+        border-radius: 5px;
+        box-shadow: 0 0 0 3px $player-green;
+
+        img {
+          display: block;
+          height: 11px;
+          position: absolute;
+          right: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 14px;
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  :global(.vjs-audio-or-subtitle-selection):first-child {
+    top: 56px;
+  }
+
+  :global(.vjs-audio-or-subtitle-selection):nth-child(2) {
+    top: 50%;
+  }
+}
+
+// subtitles position and width is set by SDK, !important is needed to override this setting
+// subtitles in png format
+:global(.vjs-text-track-display) > div > div > div {
+  left: 0 !important;
+  text-align: center;
+  width: 100% !important;
+}
+
+// subtitles in text format
+:global(.vjs-text-track-display) {
+  bottom: 5% !important;
+  left: 25% !important;
+  pointer-events: none;
+  position: absolute;
+  right: 25% !important;
+  text-align: center !important;
+  top: calc(100% - 15%) !important;
+  width: 50% !important;
+
+  p {
+    text-align: center !important;
+
+    span {
+      font-family: 'DINPro-Medium', sans-serif !important;
+      font-size: 30px !important;
+    }
+  }
+}
+
+:global(.video-js .vjs-recommendation-rails-overlay) {
+  background-color: $background-color-90;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: $popup-z-index;
+
+  &:global(.inactive) {
+    display: none;
+  }
+
+  :global(.vjs-custom-cross-icon-btn) {
+    height: 24px;
+    position: absolute;
+    right: 28px;
+    top: 30px;
+    width: 24px;
+    z-index: $overlay-z-index;
+  }
+
+  :global(.vjs-recommendation-rails-container) {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  button {
+    background: $rgb-238 !important;
+    display: flex;
+
+    span {
+      color: $rgb-0;
+    }
+
+    svg {
+      height: 16px;
+      width: 16px;
+    }
+
+    .search-icon-style {
+      fill: $background-color;
+    }
+  }
+
+  .search-button {
+    margin-left: 40px;
+  }
+}
+
+:global(.vjs-custom-background-overlay) {
+  background-image: linear-gradient(to bottom, $transparent 34%, $black-80);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+:global(.vjs-custom-error-prompt) {
+  background-color: $background-color;
+  border-radius: 5px;
+  height: 30%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: $popup-z-index;
+
+  :global(.vjs-custom-error-prompt-message),
+  :global(.vjs-custom-error-prompt-title) {
+    color: $rgb-238;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  :global(.vjs-custom-error-prompt-title) {
+    font-size: 3em;
+  }
+
+  :global(.vjs-custom-error-prompt-message) {
+    font-size: 2em;
+  }
+
+  :global(.vjs-custom-error-prompt-button) {
+    align-items: center;
+    border-radius: 4px;
+    bottom: 2rem;
+    color: $black;
+    cursor: pointer;
+    display: flex;
+    font-family: 'DINPro-Regular', sans-serif;
+    font-size: 2em;
+    height: 2.5rem;
+    justify-content: center;
+    margin: 0 5%;
+    position: absolute;
+    text-transform: uppercase;
+    width: 40%;
+
+    &:nth-child(1) {
+      background-color: $green;
+    }
+
+    &:nth-child(2) {
+      background-color: $rgb-238;
+      right: 0;
+    }
+  }
+}

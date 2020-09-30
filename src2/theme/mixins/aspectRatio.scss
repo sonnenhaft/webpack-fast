@@ -1,0 +1,19 @@
+@mixin aspect-ratio($ratio) {
+  position: relative;
+
+  // stylelint-disable-next-line selector-pseudo-element-colon-notation
+  &::before {
+    content: '';
+    display: block;
+    padding-top: $ratio * 100%;
+    width: 100%;
+  }
+
+  > .content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

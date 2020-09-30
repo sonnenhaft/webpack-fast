@@ -1,0 +1,10 @@
+query favouritesDetails($programId: String!, $channelId: String!) {
+  program: details(id: $programId) {
+    id
+    inFavorites
+  }
+  channel: details(id: $channelId) {
+    id
+    inFavorites
+  }
+}

@@ -1,0 +1,11 @@
+{
+  entitlements {
+    productId
+    status
+    validityType
+    productType
+    purchasedOffer
+    validFrom
+    expiryDate
+  }
+}

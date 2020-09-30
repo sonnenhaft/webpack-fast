@@ -1,0 +1,31 @@
+fragment searchProps on Rail {
+  totalCount
+  items {
+    id
+    title
+    description
+    images {
+      fileUrl
+    }
+    ... on DetailsInterface {
+      productRefs
+    }
+  }
+}
+
+query search($keyword: String) {
+  searchTwoDotZero(q:$keyword) {
+    isNoResultsPage
+    page {
+      title
+      containersData {
+        sourceParams
+        displayText
+        cardType
+        rail {
+          ...searchProps
+        }
+      }
+    }
+  }
+}

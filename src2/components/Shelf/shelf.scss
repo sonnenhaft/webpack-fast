@@ -1,0 +1,140 @@
+@import '~#/theme/variables/colors.scss';
+
+@mixin button-general {
+  button {
+    color: $black-0;
+
+    &::before {
+      opacity: .25;
+    }
+
+    &:focus::before {
+      opacity: .25;
+    }
+  }
+
+  &:global(.slick-active) {
+    button {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@mixin button-dark {
+  button {
+    &::before {
+      color: $white;
+    }
+  }
+
+  &:global(.slick-active) {
+    button {
+      &::before {
+        color: $white;
+      }
+    }
+  }
+}
+
+@mixin button-light {
+  button {
+    &::before {
+      color: $rgb-0;
+    }
+  }
+
+  &:global(.slick-active) {
+    button {
+      &::before {
+        color: $rgb-0;
+      }
+    }
+  }
+}
+
+:global(.slick-dots) {
+  li {
+    @include button-general;
+  }
+}
+
+.dark {
+  :global(.slick-arrow::before) {
+    color: $white;
+  }
+
+  :global(.slick-dots) {
+    li {
+      @include button-dark;
+    }
+  }
+}
+
+.light {
+  :global(.slick-arrow::before) {
+    color: $rgb-0;
+  }
+
+  :global(.slick-dots) {
+    li {
+      @include button-light;
+    }
+  }
+}
+
+.back-drop {
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(13px);
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.main-banner {
+  z-index: 1;
+}
+
+:global(.slick-prev),
+:global(.slick-next) {
+  background-color: $background-color-38;
+  border-radius: 4px;
+  height: 80px;
+  width: 64px;
+
+  &:hover {
+    background-color: $background-color-60;
+  }
+
+  > svg {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+:global(.slick-prev) {
+  left: -10px;
+  z-index: 1;
+}
+
+:global(.slick-next) {
+  right: -10px;
+}
+
+:global(.slick-next) > svg {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+:global(.slick-track) {
+  padding: 17px;
+}

@@ -1,0 +1,14 @@
+query paymentTransactions($from: Date!, $to: Date!) {
+  paymentTransactions(from: $from, to: $to) {
+    datetime
+    paymentMethod
+    isRecurring
+    externalProductId
+    productName
+    currencyCode
+    priceFinal
+    nagraProduct {
+      Title
+    }
+  }
+}

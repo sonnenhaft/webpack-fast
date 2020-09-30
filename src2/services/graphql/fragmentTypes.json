@@ -1,0 +1,162 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "INTERFACE",
+        "name": "IRailItem",
+        "possibleTypes": [
+          {
+            "name": "Editorial"
+          },
+          {
+            "name": "Pack"
+          },
+          {
+            "name": "AccedoAsset"
+          },
+          {
+            "name": "SeriesNode"
+          },
+          {
+            "name": "NagraProgram"
+          },
+          {
+            "name": "NagraChannel"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "DetailsInterface",
+        "possibleTypes": [
+          {
+            "name": "Editorial"
+          },
+          {
+            "name": "Pack"
+          },
+          {
+            "name": "AccedoAsset"
+          },
+          {
+            "name": "SeriesNode"
+          },
+          {
+            "name": "NagraProgram"
+          },
+          {
+            "name": "NagraChannel"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "Recommendable",
+        "possibleTypes": [
+          {
+            "name": "Editorial"
+          },
+          {
+            "name": "NagraProgram"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "PackOrTransactionalData",
+        "possibleTypes": [
+          {
+            "name": "Pack"
+          },
+          {
+            "name": "TransactionalPack"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "IRail",
+        "possibleTypes": [
+          {
+            "name": "Rail"
+          },
+          {
+            "name": "ProgramsResponse"
+          },
+          {
+            "name": "EpgResult"
+          },
+          {
+            "name": "SearchResponseWithPageData"
+          },
+          {
+            "name": "SearchResponse"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "VideoInterface",
+        "possibleTypes": [
+          {
+            "name": "Editorial"
+          },
+          {
+            "name": "SeriesNode"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "LinearInterface",
+        "possibleTypes": [
+          {
+            "name": "NagraProgram"
+          },
+          {
+            "name": "NagraChannel"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "PinQueryInterface",
+        "possibleTypes": [
+          {
+            "name": "ParentalPin"
+          },
+          {
+            "name": "R21Pin"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "AddFavouriteResponse",
+        "possibleTypes": [
+          {
+            "name": "Editorial"
+          },
+          {
+            "name": "NagraChannel"
+          },
+          {
+            "name": "NagraProgram"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "SetPinIsPinValid",
+        "possibleTypes": [
+          {
+            "name": "ParentalPinMutations"
+          },
+          {
+            "name": "R21PinMutations"
+          }
+        ]
+      }
+    ]
+  }
+}

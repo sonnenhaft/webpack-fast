@@ -1,0 +1,5 @@
+mutation allowChannelsMutation($channelIds: [String!]) {
+  parentalPin {
+    allowChannels(channelIds: $channelIds)
+  }
+}

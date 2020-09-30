@@ -1,0 +1,6 @@
+mutation updateDevice($id: String!, $newDeviceName: String!) {
+  updateDevice (id: $id, newDeviceName: $newDeviceName) {
+    name
+    _id
+  }
+}

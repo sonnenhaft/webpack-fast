@@ -1,0 +1,206 @@
+query webDetails($id: String!, $isLoggedIn: Boolean!) {
+  details(id: $id) {
+    __typename
+    description
+    duration
+    genres
+    hdContent
+    id
+    image
+    inFavorites
+    products {
+      pack {
+        denomination
+        displayText
+        productId
+        purchasableUfinityProduct {
+          paymentRecurring
+          priceFinal
+          productId
+          rentalPeriod
+          rentalUnit
+        }
+      }
+    }
+    productRefs
+    rating
+    title
+    ...detailAdditionalInfoFragment
+    ...detailVODFragment
+    ...linearAdditionalInfoFragment
+    ...linearInterfaceFragment
+    ...linearProgramFragment
+    ...seriesFragment
+
+    detailsPage {
+      ...pageFragment
+    }
+
+    recommendations {
+      ...recommendationFragment
+    }
+
+    __typename
+  }
+}
+
+fragment detailAdditionalInfoFragment on Editorial {
+  episodeNumberAndTitle
+  episodeNumber
+  seasonNumber
+  period {
+    start
+    end
+  }
+  series {
+    id
+    title
+    episodes {
+      ...episodeFragment
+    }
+    seasons {
+      ...seasonFragment
+    }
+  }
+  position
+  duration
+}
+
+fragment detailVODFragment on VideoInterface {
+  cast_crew: castAndCrew {
+    castName: name
+    castTitle: title
+  }
+  position
+  subtitles
+}
+
+fragment linearAdditionalInfoFragment on NagraChannel {
+  isIptvMulticast
+  isOttUnicast
+  nowPlaying {
+    id
+    language: Language
+    next {
+      duration
+      id
+      rating
+      title
+    }
+  }
+}
+
+fragment linearInterfaceFragment on LinearInterface {
+  endTime
+  isCatchUpSupported
+  startOverSupport
+  startTime
+}
+
+fragment linearProgramFragment on NagraProgram {
+  channel {
+    id
+    tvChannel
+    catchUpSupport
+  }
+}
+
+fragment seriesFragment on SeriesNode {
+  lastPlayedSeason @include(if: $isLoggedIn) {
+    lastPlayedEpisode {
+      description
+      duration
+      episodeNumber
+      episodeNumberAndTitle
+      seasonNumber
+      rating
+    }
+  }
+  lastPlayedEpisode @include(if: $isLoggedIn) {
+    description
+    duration
+    episodeNumber
+    episodeNumberAndTitle
+    rating
+  }
+  episodes {
+    ...episodeFragment
+  }
+  seasons {
+    ...seasonFragment
+  }
+}
+
+fragment pageFragment on Page {
+  isMaintenance
+  pageid
+  containersData {
+    action
+    cardType
+    displayText
+    showSeeAllCard
+    template
+    rail {
+      totalCount
+      items {
+        ...recommendationFragment
+      }
+    }
+  }
+}
+
+fragment recommendationFragment on Recommendable {
+  id
+  image
+  productRefs
+  title
+  duration
+  ... on VideoInterface {
+    position
+  }
+  ... on LinearInterface {
+    period {
+      start
+      end
+    }
+  }
+}
+
+fragment episodeFragment on Editorial {
+  period {
+    start
+    end
+  }
+  episodeDisplayTitle
+  episodeNumberAndTitle
+  episodeNumber
+  id
+  image
+  productRefs
+  rating
+  seasonNumber
+  title
+  position
+  duration
+}
+
+fragment seasonFragment on Season {
+  episodesCount
+  seasonId: id
+  seasonNumber
+  episodes {
+    period {
+      start
+      end
+    }
+    episodeDisplayTitle
+    episodeNumberAndTitle
+    episodeNumber
+    id
+    image
+    productRefs
+    title
+    position
+    duration
+  }
+}

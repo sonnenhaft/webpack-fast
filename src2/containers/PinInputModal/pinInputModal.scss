@@ -1,0 +1,58 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+.custom-dimension {
+  @include responsive(small-screens) {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  height: 368px;
+  width: auto;
+}
+
+.pin-title {
+  @include responsive(small-screens) {
+    font-size: 1.375em;
+    line-height: 1.82;
+  }
+
+  color: $rgb-238;
+  font-family: $regular-font;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 8px;
+}
+
+.pin-content {
+  @include responsive(small-screens) {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  color: $grey-63;
+  font-size: 1em;
+  line-height: 1.33;
+  margin: .5rem 50px 24px;
+  text-align: center;
+}
+
+.pin-forgot {
+  @include responsive(small-screens) {
+    font-size: .8125em;
+    line-height: 1.85;
+  }
+
+  color: $green;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.pin-spinner {
+  background: transparent;
+  height: 30%;
+  width: auto;
+}

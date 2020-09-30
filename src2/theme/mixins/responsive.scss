@@ -1,0 +1,37 @@
+@import '~#/theme/variables/breakpoints.scss';
+
+@mixin responsive($media) {
+  @if $media == tiny-screens {
+    @media only screen and (max-width: $layout-breakpoint-xxs) {
+      @content;
+    }
+  }
+
+  @else if $media == small-screens {
+    @media only screen and (max-width: $layout-breakpoint-xs) {
+      @content;
+    }
+  }
+
+  @else if $media == medium-screens {
+    @media only screen and (max-width: $layout-breakpoint-lg-tablet) {
+      @content;
+    }
+  }
+
+  @else if $media == large-screens {
+    @media only screen and (max-width: $layout-breakpoint-xl) {
+      @content;
+    }
+  }
+
+  @else if $media == extra-large-screens {
+    @media only screen and (min-width: $layout-breakpoint-xl) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}

@@ -1,0 +1,111 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+.metadata-container {
+  @include responsive(small-screens) {
+    margin: 0 0 24px 16px;
+  }
+
+  margin: 0 0 32px 84px;
+  position: relative;
+
+  .asset-details-title {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      max-height: 6.5em;
+      max-width: 37.8vw;
+      overflow: hidden;
+
+      @include responsive(small-screens) {
+        max-width: calc(100vw - 32px);
+      }
+    }
+
+    span {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.movie-metadata {
+  > div {
+    align-items: center;
+    display: flex;
+
+    svg,
+    span {
+      &:not(:first-child) {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  span {
+    color: $grey-63;
+    font-size: 1.125em;
+    line-height: 1.33;
+  }
+
+  > div:nth-child(2) {
+    margin-top: 12px;
+  }
+
+  > div:nth-child(3) {
+    margin-top: 8px;
+  }
+}
+
+.quality-icon {
+  height: 18px;
+  width: 29px;
+}
+
+.rating-icon {
+  background-color: $login-section;
+  border-radius: 5px;
+  color: $grey-63;
+  font-size: .875em;
+  font-weight: bold;
+  margin-left: .5em;
+  padding: 0 .25em;
+}
+
+.pack-metadata-container {
+  span {
+    @include responsive(small-screens) {
+      font-size: .9375em;
+      line-height: 1.6;
+    }
+
+    color: $grey-63;
+    font-size: 1.125em;
+    line-height: 1.33;
+  }
+}
+
+.metadata-description {
+  @include responsive(small-screens) {
+    font-size: .9375em;
+    line-height: 1.6;
+    max-width: 100vw;
+  }
+
+  color: $rgb-238;
+  font-size: 18px;
+  line-height: 1.78;
+  margin-top: 24px;
+  max-width: 37.8vw;
+  white-space: pre-line;
+}
+
+.entitlement-info {
+  color: $pink;
+  font-family: $dinpro-font;
+  font-size: .9em;
+  font-weight: lighter;
+}

@@ -5,7 +5,7 @@ import './index.js'
 
 import classMe from './index.scss'
 console.log('classMe', classMe)
-import Spinner from './Spinner/Spinner.jsx'
+// import Spinner from './Spinner/Spinner.jsx'
 
 class HelloMessage extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class HelloMessage extends React.Component {
 
         return <div>
             <div className={`container ${classMe.classMe}`}>
-                <Spinner/>
+                {/*<Spinner/>*/}
                 <Header/>
 
                 <h1>Helloooo {this.props.name}</h1>

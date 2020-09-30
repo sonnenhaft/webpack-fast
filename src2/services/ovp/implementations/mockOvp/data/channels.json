@@ -1,0 +1,529 @@
+{
+  "pageSize": 100,
+  "pageNumber": 1,
+  "totalCount": 18,
+  "entries": [
+    {
+      "id": "fox-sports-1",
+      "channelNumber": 501,
+      "title": "FOX Sports 1",
+      "description": "Enim non ipsum adipisicing velit amet in consectetur. Fugiat proident consectetur ipsum sunt esse in nulla duis nostrud Lorem fugiat nostrud nulla incididunt. Laboris consequat nulla ipsum aliqua sit officia sit officia consequat amet esse velit amet. Et enim est fugiat ea nostrud amet aliquip Lorem ex id consectetur. Tempor exercitation dolor dolore labore do nostrud nostrud duis.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/foxsports_1.png",
+          "id": "img_501",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "fox-sports-2",
+      "channelNumber": 502,
+      "title": "FOX Sports 2",
+      "description": "Minim minim duis sint anim laboris eu in in velit. Laborum dolore amet excepteur excepteur. Deserunt exercitation cupidatat consectetur ullamco.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/foxsports_2.png",
+          "id": "img_502",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "fox-sports-3",
+      "channelNumber": 503,
+      "title": "FOX Sports 3",
+      "description": "Cillum amet esse cillum laborum mollit magna nisi veniam ipsum minim labore aute irure. Aliquip aliqua ullamco sint in aute amet minim pariatur. Mollit ea aliqua reprehenderit aliquip tempor in laboris eiusmod est ipsum sunt velit. Tempor Lorem quis labore ullamco officia consectetur fugiat. Sint anim eu id ad Lorem dolor ut qui in. Incididunt do occaecat tempor ullamco quis eu velit cupidatat ipsum cillum elit irure officia.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/foxsports_3.png",
+          "id": "img_503",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "espn",
+      "channelNumber": 504,
+      "title": "ESPN",
+      "description": "Velit dolor voluptate nulla incididunt et magna eiusmod labore. Est esse exercitation duis elit anim officia duis culpa consectetur pariatur dolor ad sunt aute. Elit dolore occaecat et ea excepteur aliquip adipisicing enim pariatur. Pariatur dolor mollit aliqua exercitation exercitation laborum consectetur cillum deserunt fugiat. Ut ad laboris reprehenderit aliquip incididunt ut et proident minim mollit voluptate mollit. Nostrud ex quis culpa laborum veniam Lorem ex duis sit.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/espn.png",
+          "id": "img_504",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "euro-sport",
+      "channelNumber": 505,
+      "title": "Euro Sport",
+      "description": "Enim Lorem tempor dolor qui occaecat sint sunt ex ipsum est Lorem occaecat. Sint anim magna aute anim nulla ea ullamco aliqua anim incididunt sint sunt nulla. Excepteur Lorem incididunt cupidatat amet nisi enim duis exercitation et occaecat pariatur non in cupidatat. Anim amet aute ullamco sit aliquip laboris culpa nisi incididunt enim est reprehenderit. Dolor in ex elit elit ad magna. Laboris Lorem incididunt consequat reprehenderit nostrud magna ipsum fugiat cupidatat sunt aliquip ullamco duis. Anim laboris eiusmod commodo ad labore tempor.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/eurosports.png",
+          "id": "img_505",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "cnn",
+      "channelNumber": 511,
+      "title": "CNN",
+      "description": "Consequat excepteur pariatur nisi do aliquip est incididunt ex eu ipsum. Proident aliquip labore labore reprehenderit ipsum labore anim qui veniam incididunt ullamco duis laborum ut. Reprehenderit pariatur officia quis velit commodo labore ex qui non aute. Eu duis irure tempor deserunt in cillum ex. Sint non exercitation ipsum cillum qui dolore adipisicing aliqua velit adipisicing nulla. Enim quis nostrud minim in. Aliquip ea quis nostrud in ex.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/cnn.png",
+          "id": "img_511",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "bbc-news",
+      "channelNumber": 512,
+      "title": "BBC News",
+      "description": "Aute irure ipsum eu sunt sunt cupidatat. Nisi ex reprehenderit duis consequat culpa non in eiusmod et commodo laborum est incididunt in. Qui magna do ex laboris irure qui.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/bbc_news.png",
+          "id": "img_512",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "nbc-news",
+      "channelNumber": 513,
+      "title": "NBC News",
+      "description": "Aliqua ex non quis laborum incididunt nisi exercitation consectetur incididunt tempor amet. Laboris esse incididunt sint irure culpa. Esse dolor cupidatat fugiat ea ex incididunt eu labore sint anim ad consectetur culpa laboris. Minim sunt do duis commodo. Voluptate ex ullamco laboris fugiat incididunt voluptate eiusmod magna anim excepteur.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/nbc_news.png",
+          "id": "img_513",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "channel-v",
+      "channelNumber": 521,
+      "title": "Channel V",
+      "description": "Occaecat do pariatur aliqua ut occaecat ad commodo sit incididunt nisi aliquip ad ullamco. Quis excepteur deserunt nisi voluptate tempor irure elit. Velit consectetur dolor non reprehenderit dolore consectetur sit laboris laborum dolore dolore. Eu enim sint magna labore. Reprehenderit proident aliqua nostrud esse eiusmod nisi. Cillum ut sunt sunt veniam ex labore eu veniam do pariatur et. Exercitation exercitation amet sunt sit enim dolor in proident est.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/channel_v.png",
+          "id": "img_521",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "hulu",
+      "channelNumber": 522,
+      "title": "Hulu",
+      "description": "Labore ea elit eu aliquip laboris elit minim nisi magna aliqua proident nostrud deserunt incididunt. Culpa officia voluptate reprehenderit elit commodo voluptate pariatur magna nulla. Exercitation fugiat id sint aliquip dolor ut officia reprehenderit irure dolore ipsum nulla. Mollit ipsum nulla est deserunt. Eiusmod est minim et veniam ipsum et nisi.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/hulu.png",
+          "id": "img_522",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "fox-8",
+      "channelNumber": 523,
+      "title": "Fox 8",
+      "description": "Est ut sit esse ad. Voluptate labore amet consequat amet labore occaecat. Excepteur minim commodo cillum reprehenderit veniam consequat sint eu voluptate voluptate commodo. Reprehenderit aute dolore dolor irure mollit quis nostrud dolor.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/fox_8.png",
+          "id": "img_523",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "hbo",
+      "channelNumber": 524,
+      "title": "HBO",
+      "description": "Eu consequat mollit irure aliquip sint ipsum cupidatat exercitation. Sint excepteur ipsum mollit sint anim irure incididunt. Pariatur enim aute laboris eu quis nisi ut elit reprehenderit dolore deserunt laboris ea elit. Ut ullamco irure reprehenderit nostrud sit nulla amet do Lorem consectetur sit. Sunt qui duis fugiat irure nulla mollit qui.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/hbo.png",
+          "id": "img_524",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "kids-co",
+      "channelNumber": 531,
+      "title": "Kids Co.",
+      "description": "Commodo aliqua amet velit nulla pariatur labore nulla tempor. Non do eu adipisicing adipisicing anim Lorem. Eiusmod id exercitation laborum exercitation dolor anim est officia minim ad duis anim. Irure amet anim proident officia cupidatat reprehenderit nostrud. Labore culpa et sunt sunt est occaecat voluptate. Ad duis reprehenderit dolore do et duis sit exercitation velit amet Lorem reprehenderit.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/kids_co.png",
+          "id": "img_531",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "cartoon-network",
+      "channelNumber": 532,
+      "title": "Cartoon Network",
+      "description": "Amet eu cillum qui voluptate est et velit. Lorem ipsum nulla esse eiusmod in minim exercitation tempor reprehenderit commodo ipsum officia pariatur. Culpa exercitation et quis cillum ea. Eiusmod enim labore aliquip laborum commodo ex qui ut Lorem dolor. Nulla cupidatat fugiat aliquip reprehenderit ullamco laboris non consequat aute eiusmod nisi quis est nostrud.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/cartoon_network.png",
+          "id": "img_532",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "disney-channel",
+      "channelNumber": 533,
+      "title": "Disney Channel",
+      "description": "Nostrud proident anim proident voluptate ad elit laboris aliquip labore officia ut id dolore. Do duis exercitation deserunt proident cupidatat nulla voluptate cupidatat sit exercitation. Velit ipsum deserunt cillum aliquip consectetur cillum duis officia pariatur. Eu consequat magna occaecat irure eiusmod velit deserunt sint id ad est Lorem laboris.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/disney_channel.png",
+          "id": "img_533",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "discovery-home-and-health",
+      "channelNumber": 541,
+      "title": "Discovery Home & Health",
+      "description": "Aute ipsum enim deserunt laborum tempor consequat tempor magna excepteur. Culpa aute exercitation irure fugiat amet culpa do consequat velit dolor eiusmod. Veniam non et amet mollit ullamco aliqua pariatur cillum pariatur sunt et aliqua consectetur. Sit pariatur excepteur minim quis sint. Veniam elit sunt sit labore qui ex quis qui ea. Ea est adipisicing in amet irure magna consequat cupidatat aliquip esse aliquip anim.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/discovery_home_health.png",
+          "id": "img_541",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "fashion-tv",
+      "channelNumber": 542,
+      "title": "Fashion TV",
+      "description": "Ea consectetur magna ullamco occaecat incididunt commodo voluptate enim. Aliqua amet commodo nulla excepteur laborum qui reprehenderit. Cupidatat ullamco do consequat irure Lorem consectetur officia tempor minim culpa sunt. Sint sunt veniam in consequat excepteur occaecat.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/fashion_tv.png",
+          "id": "img_542",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    },
+    {
+      "id": "tlc",
+      "channelNumber": 543,
+      "title": "TLC",
+      "description": "Ullamco deserunt anim qui culpa ullamco fugiat excepteur. Aliqua voluptate qui eiusmod non pariatur in et. Laborum dolore ullamco laboris elit irure esse eu. Adipisicing ullamco tempor consectetur Lorem ex laboris aliquip dolore sunt id. Est proident tempor ea ipsum tempor elit elit incididunt culpa. Mollit occaecat laboris culpa incididunt consequat in pariatur est dolore occaecat anim. Aliquip commodo ullamco voluptate ullamco qui elit sit nulla commodo est sint.\r\n",
+      "language": "en",
+      "categories": [null],
+      "images": [
+        {
+          "url": "http://vdk-ovp.ocs.demo.accedo.tv/images/channel_logo/tlc.png",
+          "id": "img_543",
+          "type": "logo",
+          "width": 114,
+          "height": 52
+        }
+      ],
+      "contents": [
+        {
+          "id": "vid_104",
+          "format": "mp4",
+          "url": "http://share.tve.demo.accedo.tv/live.php",
+          "width": 1182,
+          "height": 665,
+          "duration": 0,
+          "language": "en"
+        }
+      ],
+      "metadata": []
+    }
+  ]
+}

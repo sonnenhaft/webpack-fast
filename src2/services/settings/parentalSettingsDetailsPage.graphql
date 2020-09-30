@@ -1,0 +1,12 @@
+query parentalSettingsDetailsQuery {
+  parentalPin {
+    isEnabled
+    settings {
+      restrictChannelsByPin
+      restrictContentByPin
+      restrictInAppPurchasesByPin
+    }
+    maxRating: rating
+    ratingCode
+  }
+}

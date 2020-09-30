@@ -1,0 +1,9 @@
+query r21Pin {
+  settings {
+    hasEmail
+  }
+  r21Pin {
+    isEnabled
+    lastUpdated
+  }
+}

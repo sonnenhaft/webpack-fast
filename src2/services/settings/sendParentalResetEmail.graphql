@@ -1,0 +1,5 @@
+mutation sendParentalResetEmail {
+  parentalPin {
+    sendEmailToReset
+  }
+}

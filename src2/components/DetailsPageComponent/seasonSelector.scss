@@ -1,0 +1,19 @@
+.season-selector-container {
+  display: flex;
+  margin-left: 75px;
+  margin-top: 1em;
+
+  .chevron-container {
+    margin-left: 3.182em;
+
+    .custom-chevron {
+      height: 16px;
+      transform: rotate(-90deg);
+      width: 16px;
+
+      .custom-chevron-path {
+        opacity: 1;
+      }
+    }
+  }
+}

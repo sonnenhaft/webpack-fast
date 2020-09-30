@@ -1,0 +1,3 @@
+mutation {
+  resetPin(pinType: R21Pin)
+}

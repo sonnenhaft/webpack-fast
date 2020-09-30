@@ -1,0 +1,79 @@
+@import '~#/theme/base.scss';
+
+.multi-pack-container {
+  margin: 0 1.5rem;
+
+  .multi-pack-text {
+    margin-top: 1.5em;
+
+    span {
+      color: $grey-86;
+      font-size: 1.5em;
+      line-height: 1.33;
+    }
+  }
+
+  .multi-pack-subtext {
+    margin: .5em 0 1.375em;
+
+    span {
+      color: $grey-63;
+      font-size: 1.125em;
+      line-height: 1.33;
+    }
+  }
+
+  .pack-container {
+    display: inline-flex;
+    flex-flow: row wrap;
+  }
+
+  .terms-and-conditions {
+    color: $grey-44;
+    font-size: 1em;
+    line-height: 1.5;
+
+    a {
+      font-size: .8125em;
+      font-weight: bold;
+      line-height: 1.46;
+    }
+  }
+}
+
+.single-pack-container {
+  background-color: $dark-button;
+  box-shadow:
+    0 1px 5px 0 $black-20,
+    0 3px 1px -2px $black-12,
+    0 2px 2px 0 $black-14;
+  margin: 0 1.5em 1.5em 0;
+  width: 17.25em;
+
+  .single-pack-poster {
+    margin: 1.8em 2.1em 1.1em 1.6em;
+    width: 78%;
+  }
+
+  .single-pack-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.9em 0 1.8em;
+
+    .single-pack-title {
+      color: $rgb-238;
+      font-size: 1.5em;
+      line-height: 1.33;
+      margin: 1.125em 0 .5625em;
+    }
+
+    .single-pack-description {
+      color: $grey-63;
+      padding-bottom: 1.8em;
+    }
+
+    .single-pack-button {
+      margin: 0 0 1.5em;
+    }
+  }
+}

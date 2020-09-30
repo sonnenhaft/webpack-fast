@@ -1,0 +1,253 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+$terms-color: $grey-44;
+$title-color: $rgb-238;
+
+@mixin login-card-base() {
+  @include responsive(small-screens) {
+    padding: 1.5rem 2.5rem;
+  }
+
+  background-color: $login-section;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2);
+  min-width: 250px;
+  padding: 2rem 3rem;
+  position: relative;
+  width: 50%;
+}
+
+@mixin flex-center() {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  @include responsive(small-screens) {
+    min-height: 600px;
+  }
+
+  @include flex-center();
+
+  background-color: black;
+  flex: 1;
+  min-height: 700px;
+  position: relative;
+}
+
+.login-blur-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.login-cards-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card {
+  @include login-card-base();
+
+  display: flex;
+  flex-direction: column;
+
+  &.card-footer {
+    margin-top: 10px;
+  }
+}
+
+.signup-card,
+.signup-card-no-padding {
+  font-size: .7em;
+  margin-top: 8px;
+
+  & a {
+    color: $green;
+    font-family: $medium-font;
+    margin-left: 5px;
+    text-decoration: none;
+  }
+}
+
+.signup-card {
+  @include login-card-base();
+
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 3rem;
+}
+
+.login-spinner {
+  background-color: transparent;
+  height: 18rem;
+  width: 100%;
+}
+
+.profile-selector {
+  @include login-card-base();
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 3rem 4rem 2rem;
+  width: 75%;
+
+  .selector-title {
+    @include responsive(small-screens) {
+      font-family: $regular-font;
+      font-size: 1em;
+    }
+
+    color: $title-color;
+    font-family: $medium-font;
+    font-size: 1.15em;
+    letter-spacing: .1px;
+    margin: .35rem;
+  }
+
+  .selector-options-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-height: 276px;
+    overflow-y: scroll;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  .selector-option {
+    background-color: $button-focusable-background;
+    border-radius: 5px;
+    box-shadow:
+      0 1px 5px 0 $black-20,
+      0 3px 1px -2px $black-12,
+      0 2px 2px 0 $black-14;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1.1rem;
+    position: relative;
+    width: 75%;
+
+    .option-text {
+      color: $title-color;
+      font-family: $regular-font;
+      font-size: .8em;
+      line-height: 18px;
+    }
+  }
+
+  .selector-sub-title {
+    color: $grey-63;
+    font-family: $regular-font;
+    font-size: .7em;
+    margin-bottom: 1rem;
+  }
+
+  .selector-button {
+    margin: .6rem 0;
+    width: 86.5%;
+  }
+}
+
+.login-title {
+  @include responsive(small-screens) {
+    font-family: $regular-font;
+  }
+
+  color: $title-color;
+  font-family: $medium-font;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.login-button {
+  background-color: $green;
+  border: none;
+  border-radius: 4px;
+  color: $background-color;
+  cursor: pointer;
+  font-family: $dinpro-font;
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  outline: none;
+  text-transform: uppercase;
+
+  .login-button-text {
+    padding: .4rem 0;
+  }
+
+  &:not(:disabled) {
+    @include button-animation();
+  }
+
+  &:disabled {
+    background-color: darken($green, 15%);
+  }
+}
+
+.login-logo {
+  @include responsive(small-screens) {
+    height: 1.8rem;
+    top: 1rem;
+  }
+
+  display: block;
+  height: 2rem;
+  position: absolute;
+  top: 2.5rem;
+  z-index: 2;
+}
+
+.login-forgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.forgot-id-password {
+  align-items: center;
+  display: flex;
+  font-size: .74em;
+
+  & a {
+    color: $green;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  & span {
+    color: $rgb-194;
+    margin: 0 8px;
+  }
+}
+
+.terms-and-conditions {
+  color: $terms-color;
+  font-size: .63em;
+  padding: 0 2px;
+}
+
+.login-error-text {
+  color: #eee;
+  font-family: $dinpro-font;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}

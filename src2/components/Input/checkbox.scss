@@ -1,0 +1,67 @@
+@import '~#/theme/base.scss';
+$checkbox-input: 16px;
+
+.checkbox {
+  align-items: center;
+  color: $rgb-194;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+
+  .tick-icon-container {
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+    position: absolute;
+    width: auto;
+  }
+
+  & label {
+    font-size: .8em;
+    margin-left: .8rem;
+    transform: translateY(-.5px);
+  }
+
+  & input {
+    appearance: none;
+    background-color: transparent;
+    border: .1rem solid $grey-86;
+    border-radius: 2.5px;
+    cursor: pointer;
+    height: $checkbox-input;
+    margin: 0;
+    min-width: $checkbox-input;
+    outline: none;
+    width: $checkbox-input;
+
+    &:checked {
+      ~ .tick-icon-container {
+        display: block;
+      }
+    }
+
+    &:disabled {
+      opacity: .5;
+
+      ~ .tick-icon-container {
+        opacity: .5;
+      }
+
+      ~ label {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.input-checkbox-green {
+  & input {
+    border: .041rem solid $grey-86;
+
+    &:checked {
+      border: none;
+    }
+  }
+}

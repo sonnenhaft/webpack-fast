@@ -1,0 +1,5 @@
+mutation webBookmarkPosition($editorialId: String, $position: Int){
+  rememberPosition(editorialId: $editorialId, position: $position) {
+    id
+  }
+}

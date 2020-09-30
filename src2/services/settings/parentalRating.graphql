@@ -1,0 +1,10 @@
+query parentalRatingQuery {
+  parentalPin {
+    isEnabled
+    settings {
+      restrictContentByPin
+    }
+    rating
+    ratingCode
+  }
+}

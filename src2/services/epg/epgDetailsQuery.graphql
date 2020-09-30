@@ -1,0 +1,35 @@
+query webEpgDetails($id: String!) {
+  details (id: $id) {
+    description
+    duration
+    genres
+    id
+    image
+    productRefs
+    rating
+    title
+    products {
+      pack {
+        id
+        productId
+        purchasableUfinityProduct {
+          productId
+        }
+      }
+    }
+    ... on LinearInterface {
+      endTime
+      isCatchUpSupported
+      startOverSupport
+      startTime
+    }
+    ... on NagraProgram {
+      next {
+        duration
+        id
+        rating
+        title
+      }
+    }
+  }
+}

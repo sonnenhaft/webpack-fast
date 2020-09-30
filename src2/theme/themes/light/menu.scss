@@ -1,0 +1,40 @@
+@import '../../base.scss';
+@import '~@accedo/vdkweb-ui/lib/components/Menu/menu.scss';
+@import './colors.scss';
+
+.menu {
+  background-color: $light-theme-color-lategrey;
+}
+
+.menu-sub-item {
+  @include responsive(medium-screens) {
+    background: none;
+    display: block;
+  }
+
+  background-color: rgba(100, 100, 100, .8);
+}
+
+.menu-sub-item:hover {
+  @media screen and (min-width: $layout-breakpoint-sm-tablet) {
+    background-color: $light-theme-color-lategrey-90;
+  }
+}
+
+.menu-sub-item span {
+  color: $white;
+}
+
+.menu-sub-item:hover span {
+  color: $white;
+}
+
+.sub-items-container {
+  @include responsive(medium-screens) {
+    box-shadow: none;
+  }
+
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, .5);
+  padding: 0;
+  top: 18px;
+}

@@ -1,0 +1,8 @@
+query deviceManagement {
+  deviceList {
+    isCurrentDevice
+    created
+    name
+    id
+  }
+}

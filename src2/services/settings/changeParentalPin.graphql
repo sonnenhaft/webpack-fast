@@ -1,0 +1,5 @@
+mutation changeParentalPin($currentPin: String, $newPin: String) {
+  parentalPin {
+    setValue(currentPin: $currentPin, newPin: $newPin)
+  }
+}

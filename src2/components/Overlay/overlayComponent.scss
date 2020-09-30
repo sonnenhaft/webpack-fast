@@ -1,0 +1,47 @@
+@import '~#/theme/base.scss';
+
+.overlay-outer-container {
+  background-color: $background-color-90;
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $fullscreen-overlay-z-index;
+
+  &.visible {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.overlay-inner-container {
+  @include responsive(small-screens) {
+    background-color: $background-color;
+  }
+
+  align-items: center;
+  background-color: $button-focusable-background;
+  box-shadow:
+    0 1px 5px 0 $black-20,
+    0 3px 1px -2px $black-12,
+    0 2px 2px 0 $black-14;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cross-icon-container {
+  @include responsive(small-screens) {
+    right: 27px;
+    top: 100px;
+  }
+
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}

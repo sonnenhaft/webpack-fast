@@ -1,0 +1,211 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+$menu-grey: $dark-grey-alt;
+$regular-padding: 18%;
+$medium-padding: 8%;
+$small-padding: 1rem;
+
+.main-title {
+  padding: 0;
+  pointer-events: none;
+}
+
+.page-header {
+  @include main-title();
+
+  @include responsive(medium-screens) {
+    padding: 3rem $medium-padding 1rem;
+  }
+
+  @include responsive(small-screens) {
+    padding: 3rem $small-padding 1rem;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem $regular-padding 1rem;
+
+  .most-recent-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    z-index: 8;
+
+    & button {
+      position: relative;
+      width: 11rem;
+
+      &::before {
+        content: '';
+        display: block;
+        left: 0;
+        padding: 9px 5.5rem;
+        position: absolute;
+        top: 2rem;
+        width: 0;
+      }
+
+      &:hover {
+        .filter-menu-hover {
+          display: block;
+        }
+      }
+    }
+
+    .filter-menu {
+      @include base-menu($menu-grey);
+
+      border-radius: 3px;
+      right: 5px;
+      top: 48px;
+
+      &::before {
+        border: 9px solid transparent;
+        border-bottom: 18px solid $menu-grey;
+        border-top: 0;
+        content: '';
+        display: block;
+        position: absolute;
+        right: 1%;
+        top: 5px;
+        transform: translate(-50%, calc(-100% - 5px));
+        width: 0;
+      }
+
+      .filter-menu-item {
+        @include base-menu-item($menu-grey);
+
+        font-family: $dinpro-font;
+        font-size: 1.5em;
+        font-weight: lighter;
+        justify-content: flex-start;
+        padding: .7rem 6rem .7rem 3rem;
+
+        &:hover {
+          background-color: lighten($background-color, 2%);
+          color: $rgb-238;
+        }
+      }
+    }
+  }
+}
+
+.transactions-container {
+  margin: 1rem 0 .5rem;
+}
+
+.transaction-seperator {
+  @include responsive(medium-screens) {
+    margin: 0 $medium-padding;
+  }
+
+  @include responsive(small-screens) {
+    margin: 0 $small-padding;
+  }
+
+  flex: unset;
+  margin: 0 $regular-padding;
+  transform: unset;
+}
+
+.transaction-subsection {
+  @include responsive(medium-screens) {
+    padding: 0 $medium-padding;
+  }
+
+  @include responsive(small-screens) {
+    padding: 0 $small-padding;
+  }
+
+  padding: 0 $regular-padding;
+}
+
+.transaction-item {
+  background-color: $device-mgmt-item;
+  border-radius: 5px;
+  box-shadow:
+    0 1px 5px 0 $black-20,
+    0 3px 1px -2px $black-12,
+    0 2px 2px 0 $black-14;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .6rem;
+  padding: 1.1rem 2rem 1.3rem;
+
+  .transaction-image {
+    height: 9.9rem;
+    margin-right: 2rem;
+    object-fit: scale-down;
+    width: 6.8rem;
+  }
+
+  .transaction-meta-container {
+    flex: 1;
+  }
+
+  .transaction-date {
+    color: rgb(205, 207, 207);
+    font-family: $medium-font;
+    font-size: .9em;
+    margin-bottom: .5rem;
+  }
+
+  .transaction-title {
+    color: $rgb-238;
+    font-family: $dinpro-font;
+    font-size: 1.35em;
+    font-weight: lighter;
+    margin-bottom: 2.5rem;
+  }
+
+  .transaction-price-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .2rem;
+
+    .transaction-id {
+      color: $grey-44;
+      font-family: $dinpro-font;
+      font-size: 1.1em;
+    }
+
+    .transaction-price {
+      font-family: $regular-font;
+      font-size: 2em;
+      letter-spacing: .3px;
+    }
+
+    .transaction-payment-method {
+      color: $rgb-238;
+      font-family: $dinpro-font;
+      font-size: 1.1em;
+    }
+
+    .transaction-payment-icon {
+      height: 1.65rem;
+      width: 2.1rem;
+    }
+  }
+}
+
+.transaction-spinner {
+  height: 75vh;
+}
+
+.listing-spinner {
+  height: 60vh;
+  width: auto;
+}
+
+.no-transactions {
+  align-items: center;
+  color: $grey-63;
+  display: flex;
+  height: 45vh;
+  justify-content: center;
+  letter-spacing: .3px;
+}

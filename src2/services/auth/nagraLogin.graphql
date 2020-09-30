@@ -1,0 +1,16 @@
+mutation nagraLogin($deviceInfo: DeviceInfoInput, $essoIdOrTvId: String!, $name: varchar64!, $ufinityToken: String!) {
+  nagraLogin(
+    deviceInfo: $deviceInfo
+    essoIdOrTvId: $essoIdOrTvId
+    name: $name
+    ufinityToken: $ufinityToken
+  ) {
+    nagra {
+      token
+      refreshToken
+      tokenExpiresIn
+      refreshTokenExpiresIn
+    }
+    clientId
+  }
+}

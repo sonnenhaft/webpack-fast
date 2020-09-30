@@ -1,0 +1,16 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+@import '~#/theme/mixins/utils.scss';
+
+.grid-container {
+  margin-top: .5rem;
+}
+
+.grid-row {
+  @include responsive(medium-screens) {
+    justify-content: center;
+  }
+
+  display: flex;
+  justify-content: space-between;
+}

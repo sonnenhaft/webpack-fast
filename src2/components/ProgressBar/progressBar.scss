@@ -1,0 +1,10 @@
+@import '~#/theme/variables/colors.scss';
+
+.default-progress-bar {
+  border-radius: 5px;
+
+  .default-progress {
+    border-radius: 5px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/zIndex.scss';
+
+.banner {
+  background-color: $grey-44;
+  display: block;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  z-index: $popup-z-index;
+}

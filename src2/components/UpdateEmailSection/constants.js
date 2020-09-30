@@ -1,0 +1,11 @@
+export const STEP_1_R21 = 'r21UpdateHubIdHeadingText_web';
+export const STEP_1_PARENTAL = 'parentalUpdateHubIdHeadingText_web';
+export const TRY_AGAIN = 'tryAgainText';
+export const CONTINUE_TO_PARENTAL_PIN = 'parentalPinContinueSetupTitle';
+export const CONTINUE_TO_R21_PIN = 'r21ContinueSetupTitle';
+export const HUB_ID_NOT_UPDATED = 'r21UpdateHubIdEmailNotUpdated';
+export const UPDATE_ID_EMAIL = 'r21UpdateHubIdHeadingText';
+export const ONCE_UPDATED = 'r21ContinueSetupDescription';
+export const CONTINUE = 'r21ContinueBtn_web';
+export const HUB_ID_EMAIL_FAILED = 'r21EmailNotUpdatedPopup_web';
+export const CHECK_HUB_ID = 'hubIdEmailNotUpdateDescription';

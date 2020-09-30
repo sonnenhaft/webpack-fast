@@ -1,0 +1,4 @@
+mutation RemoveFromFavourites($channelId: String!, $programId: String!) {
+  removeChannel: removeFromFavourites(id: $channelId)
+  removeProgram: removeFromFavourites(id: $programId)
+}

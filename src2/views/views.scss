@@ -1,0 +1,60 @@
+@import '~#/theme/base.scss';
+
+.viewport {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding-bottom: 6rem;
+}
+
+.content-no-padding {
+  padding-bottom: 0;
+}
+
+.page-content,
+.page-title {
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.page-title {
+  background-color: $page-title-background;
+  color: $rgb-10;
+}
+
+.page-footer {
+  @include responsive(small-screens) {
+    bottom: 0;
+    padding-top: 15px;
+  }
+
+  background-color: rgb(30, 33, 36);
+  z-index: 15;
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+
+.coming-soon-page-title {
+  margin-left: 40px;
+}

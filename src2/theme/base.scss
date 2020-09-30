@@ -1,0 +1,23 @@
+@import './variables/colors.scss';
+@import './variables/breakpoints.scss';
+@import './mixins/responsive.scss';
+@import './mixins/button-animation.scss';
+@import './mixins/utils.scss';
+@import './mixins/base-menu.scss';
+@import './zIndex.scss';
+$topbar-height: 80px;
+
+body {
+  color: $dark;
+  // font: 400 15px/22px 'Open Sans', 'Helvetica Neue', Sans-serif;
+  // stylelint-disable-next-line property-no-unknown
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $main-text-color;
+}

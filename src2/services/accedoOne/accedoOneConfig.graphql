@@ -1,0 +1,39 @@
+query webAccedoOneConfig {
+  accedoOne {
+    appName
+    appSettingEntry {
+      maintenance
+    }
+    copyrightText
+    drmSSMEndpointURL
+    drmSSMLicenseKey
+    drmSSMLicenseURL
+    epgCategories {
+      category
+      displayText
+    }
+    faqUrl
+    languageMap
+    mainMenuEntryId
+    maximumTimeShiftHours
+    maxItemsInRail
+    noPurchaseButtonText
+    messages
+    ratings
+    ratingNameWeights
+    moreInformation {
+      name
+    }
+    playerErrors
+    cdnErrors
+    preferredAudio
+    preferredSubtitle
+    privacyPolicyLink
+    signUpAndForgotCredentials {
+      signUpUrl
+      forgotHubIdUrl
+      forgotPasswordUrl
+    }
+    termsAndConditionLink
+  }
+}

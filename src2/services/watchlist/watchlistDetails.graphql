@@ -1,0 +1,7 @@
+query watchlistDetails($id: String!) {
+  details(id: $id) {
+    id
+    title
+    inFavorites
+  }
+}

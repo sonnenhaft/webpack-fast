@@ -1,0 +1,44 @@
+query webListing(
+  $id: String!
+  $filter: String
+  $order: RailSort
+  $asc: Boolean
+) {
+  container(id: $id, filter: $filter) {
+    id
+    _meta {
+      id
+      entryAlias
+    }
+    action
+    displayText
+    nagraFilters {
+      totalCount
+      displayText
+      id
+    }
+    appliedFilter {
+      displayText
+    }
+    rail(order: $order, asc: $asc) {
+      items {
+        id
+        image
+        title
+        ... on DetailsInterface {
+          productRefs
+        }
+        ... on VideoInterface {
+          position
+          duration
+        }
+        ... on LinearInterface {
+          period {
+            start
+            end
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,18 +8,24 @@
     "parcel": "parcel ./index.html"
   },
   "alias": {
-    "#": "./src"
+    "#": "./src2"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.5.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@types/html-webpack-plugin": "^3.2.3",
     "@types/react": "^16.9.49",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.3.0",
+    "graphql-tag": "^2.11.0",
     "html-webpack-plugin": "^4.5.0",
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^3.2.2",
@@ -33,9 +39,36 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@accedo/accedo-one": "^4.0.2",
+    "@accedo/accedo-one-express": "^3.0.0",
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
     "classnames": "^2.2.6",
+    "graphql": "^15.3.0",
+    "localforage": "^1.9.0",
+    "material-ui": "^0.20.2",
+    "moment": "^2.29.0",
+    "moment-mini": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-cookie": "^4.0.3",
+    "react-css-themr": "^2.1.2",
+    "react-dom": "^16.13.1",
+    "react-fast-compare": "^3.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router": "^5.2.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "react-share": "^4.3.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "ua-parser-js": "^0.7.22",
+    "url-loader": "^4.1.0"
   }
 }

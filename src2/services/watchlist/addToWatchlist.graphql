@@ -1,0 +1,3 @@
+mutation AddToWatchlist($id: String!) {
+  addToFavourites(id: $id)
+}

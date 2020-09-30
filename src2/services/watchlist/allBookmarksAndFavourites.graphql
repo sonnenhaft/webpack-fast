@@ -1,0 +1,10 @@
+query bookmarksAndFavourites {
+  allBookMarksAndFavourites {
+    totalCount
+    bookmarksAndFavorites {
+      position
+      isFavourite
+      id
+    }
+  }
+}

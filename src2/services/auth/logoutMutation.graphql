@@ -1,0 +1,9 @@
+mutation logout($ufinityAccessToken: String!, $nagraAccessToken: String!) {
+  logout(
+    ufinityAccessToken: $ufinityAccessToken, 
+  	nagraAccessToken: $nagraAccessToken
+  ) {
+    nagra
+    ufinity
+  }  
+}

@@ -1,0 +1,70 @@
+@import '~#/theme/zIndex.scss';
+@import '~#/theme/variables/colors.scss';
+
+.toggle-debug {
+  height: 50px;
+  position: fixed;
+  text-align: right;
+  top: 120px;
+  width: 100%;
+  z-index: $vikimap-debug-toggle-z-index;
+}
+
+.page {
+  padding: 50px;
+}
+
+.page-containers {
+  padding-top: 50px;
+}
+
+.container {
+  background-color: $rgb-200;
+  border: 1px solid $lightgrey;
+  border-radius: 2px;
+  color: $rgb-0;
+  margin-bottom: 10px;
+}
+
+.container-title {
+  background-color: $rgb-230;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.container-props {
+  padding: 50px;
+}
+
+.item-props {
+  padding: 10px;
+}
+
+.item {
+  background-color: $rgb-250;
+  border: 1px solid $lightgrey;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  background-color: $rgb-230;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.prop-row {
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+.prop-key {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.prop-value {
+  display: inline;
+}

@@ -1,0 +1,7 @@
+.container-title-custom-class {
+  margin-left: 80px;
+}
+
+.custom-inner-container-class :global(.slick-list) {
+  padding-left: 45px;
+}

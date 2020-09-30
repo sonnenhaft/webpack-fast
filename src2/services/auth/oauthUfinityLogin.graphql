@@ -1,0 +1,15 @@
+mutation oauthComplete($code: String!, $redirectUri: String!) {
+  login: oauthComplete(code: $code, redirect_uri: $redirectUri) {
+    ufinity {
+      token
+      refreshToken
+      tokenExpiresIn
+      refreshTokenExpiresIn
+    }
+    isLite
+    essoId
+    tvId {
+      id
+    }
+  }
+}

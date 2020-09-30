@@ -1,0 +1,15 @@
+mutation clientIdLogin($clientId: String, $essoIdOrTvId: String!, $ufinityToken: String!) {
+  nagraLogin(
+    clientId: $clientId
+    essoIdOrTvId: $essoIdOrTvId
+    ufinityToken: $ufinityToken
+  ) {
+    nagra {
+      token
+      refreshToken
+      tokenExpiresIn
+      refreshTokenExpiresIn
+    }		
+    clientId
+  }
+}

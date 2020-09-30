@@ -1,0 +1,11 @@
+query filterList($pageid: String!) {
+  page(id: $pageid) {
+    filterListData {
+      valueData {
+        value
+        title
+        name
+      }
+    }
+  }
+}

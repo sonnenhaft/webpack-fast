@@ -1,0 +1,14 @@
+query parentalPinRestrictedChannels {
+  parentalPin {
+    isEnabled
+    settings {
+      restrictChannelsByPin
+      restrictContentByPin
+    }
+    restrictedChannels {
+      tvChannel
+      id
+    }
+    maxRating: rating
+  }
+}

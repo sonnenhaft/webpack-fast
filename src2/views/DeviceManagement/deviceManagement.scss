@@ -1,0 +1,137 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+@mixin button-state($percent, $scale) {
+  background: lighten($device-mgmt-item, $percent);
+  transform: scale($scale);
+  transition: .2s ease all;
+}
+
+@mixin device-item-box {
+  background-color: $device-mgmt-item;
+  border-radius: 5px;
+  padding: .82rem 1.4rem;
+}
+
+.page-title {
+  @include main-title();
+}
+
+.section-button {
+  & button {
+    min-width: unset;
+    width: 6.5rem;
+  }
+}
+
+.removed-modal-title {
+  margin: 0 0 .8rem;
+}
+
+.rename-modal {
+  min-width: unset;
+  padding: 2.3rem 0 4rem;
+}
+
+.rename-modal-button-container {
+  margin-top: 0;
+}
+
+.rename-modal-children {
+  display: flex;
+  justify-content: center;
+}
+
+.rename-modal-button {
+  display: flex;
+  justify-content: center;
+
+  & button {
+    width: 65%;
+
+    & span {
+      font-size: 1.2em;
+      line-height: 1.2;
+    }
+  }
+}
+
+.rename-modal-input {
+  margin: 19px 0 5px;
+  width: 63.5%;
+}
+
+.device-list-container {
+  @include responsive(medium-screens) {
+    width: 90%;
+  }
+
+  margin-top: 1rem;
+  width: 45rem;
+}
+
+.device-max-items {
+  color: $grey-63;
+  font-size: 15px;
+  margin: 1rem 0 1.5rem;
+}
+
+.device-item {
+  display: flex;
+  justify-content: flex-start;
+  margin: .5rem 0;
+
+  .name-section {
+    @include device-item-box();
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+    width: 80%;
+
+    & span {
+      color: $rgb-238;
+      font-family: $dinpro-font;
+      font-size: .9em;
+      font-weight: lighter;
+    }
+  }
+
+  .checkbox-container {
+    width: auto;
+
+    & input {
+      height: 19px;
+      width: 19px;
+    }
+  }
+
+  .edit-button {
+    @include device-item-box();
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: .82rem .9rem;
+    transition: .2s ease all;
+
+    .edit-icon-container {
+      height: 21px;
+      width: 21px;
+    }
+
+    &:hover {
+      @include button-state(3%, 1.07);
+    }
+
+    &:active {
+      @include button-state(6%, 1);
+    }
+  }
+}
+
+.loading-spinner {
+  height: 40vh;
+  width: unset;
+}

@@ -1,0 +1,74 @@
+query vikimap($deviceType: [DeviceType!]) {
+  accedoOne {
+    appName
+    mainMenuEntryId
+    r21EmailURL
+    menu {
+      items: menuItemsData {
+        displayText
+        pageData {
+          _meta {
+            entryAlias
+          }
+          description
+          displayText
+          isMaintenance
+          keywords
+          pageid
+          subMenuItems: submenuData {
+            keywords
+            displayText
+            description
+            pageid
+            containers: containersData {
+              ...containerFragment
+            }
+          }
+          containers: containersData {
+            ...containerFragment
+          }
+        }
+      }
+    }
+  }
+}
+
+fragment containerFragment on Container {
+  action
+  id
+  showSeeAllCard
+  source
+  sourceParams
+  title
+  template
+  displayText
+  cardType
+  rail(deviceType: $deviceType) {
+    totalCount
+    items {
+      id
+      title
+      image
+      ... on DetailsInterface {
+        productRefs
+      }
+      ... on AccedoAsset {
+        ctaAction: action
+        ctaActionParam: actionParam
+      }
+      ... on Pack {
+        productRefs
+      }
+      ... on VideoInterface {
+        duration
+        position
+      }
+      ... on LinearInterface {
+        period {
+          end
+          start
+        }
+      }
+    }
+  }
+}

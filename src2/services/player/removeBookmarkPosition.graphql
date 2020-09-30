@@ -1,0 +1,3 @@
+mutation webRemoveBookmarkPosition($editorialId: String) {
+  removeFromHistory(editorialId: $editorialId)
+}

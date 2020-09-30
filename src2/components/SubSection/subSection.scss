@@ -1,0 +1,57 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+.subsection {
+  @include responsive(small-screens) {
+    padding: 0 2.5rem;
+  }
+
+  padding: 0 8rem;
+}
+
+.subsection-title {
+  @include responsive(small-screens) {
+    font-size: 1.1em;
+  }
+
+  color: $grey-86;
+  font-family: $dinpro-font;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.subsection-disabled {
+  opacity: .5;
+}
+
+.subsection-subtitle {
+  @include responsive(small-screens) {
+    font-size: .8em;
+  }
+
+  color: $grey-63;
+  font-family: $regular-font;
+  font-size: .9em;
+  margin: .5rem 0 1.3rem;
+}
+
+.subsection-button {
+  margin-bottom: 1.2rem;
+  transform: translateX(-5px);
+
+  & button {
+    font-size: .8em;
+    height: 1.95rem;
+    min-width: 9rem;
+    padding: .3rem .6rem;
+  }
+}
+
+.seperator {
+  @include responsive(small-screens) {
+    @include page-seperator(1.8rem);
+  }
+
+  @include page-seperator(7.8rem);
+}

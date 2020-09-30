@@ -1,0 +1,33 @@
+@import '~#/theme/variables/colors.scss';
+
+@mixin base-progress-bar($progress-color, $bar-color) {
+  border: 0;
+  border-radius: 4px;
+  height: 4px;
+
+  &::-webkit-progress-bar {
+    background-color: $bar-color;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $progress-color;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $progress-color;
+    border: 0;
+    border-radius: 4px;
+  }
+}
+
+.black-progress-bar {
+  @include base-progress-bar($black, $rgb-238);
+}
+
+.green-progress-bar {
+  @include base-progress-bar($green, $grey-44);
+}

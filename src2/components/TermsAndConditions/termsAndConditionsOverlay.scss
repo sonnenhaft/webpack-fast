@@ -1,0 +1,35 @@
+@import '~#/theme/base.scss';
+
+.terms-and-conditions-heading {
+  @include responsive(small-screens) {
+    font-size: 1.375em;
+    line-height: 1.82;
+  }
+
+  color: $rgb-238;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-bottom: 20px;
+}
+
+.terms-and-conditions-content {
+  @include responsive(small-screens) {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 25px 24px;
+  }
+
+  color: $grey-63;
+  font-size: 1.125em;
+  line-height: 1.33;
+  margin: 0 40px 32px;
+
+  > ol {
+    margin: 0;
+  }
+}
+
+.terms-and-conditions-button button {
+  text-transform: uppercase;
+}

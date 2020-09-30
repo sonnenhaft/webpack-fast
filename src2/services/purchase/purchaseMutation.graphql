@@ -1,0 +1,7 @@
+mutation webPurchase($ufinityProductId: String!, $nagraProductId: String!, $assetId: String) {
+  purchase(ufinityProductId: $ufinityProductId, nagraProductId: $nagraProductId, assetId: $assetId) {
+    code
+    message
+    paymentUrl
+  }
+}

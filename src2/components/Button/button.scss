@@ -1,0 +1,204 @@
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/mixins/button-animation.scss';
+@import '~#/theme/mixins/responsive.scss';
+@import '~#/theme/mixins/utils.scss';
+@import '~#/theme/fonts.scss';
+
+@mixin resize() {
+  @include responsive(medium-screens) {
+    &:not(.dark-button) button {
+      padding: .34rem 1rem;
+    }
+
+    & button {
+      & span {
+        font-size: 1em;
+      }
+
+      .icon-container {
+        & svg {
+          height: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin base-light-button($color, $hover-color) {
+  @include resize();
+
+  margin: 0 5px;
+
+  & button {
+    background-color: $color;
+    color: $black;
+    padding: .43rem 1rem;
+
+    & span {
+      font-size: 1em;
+    }
+
+    &:not(:disabled) {
+      @include button-animation();
+
+      &:hover {
+        background-color: $hover-color !important;
+      }
+    }
+
+    &:disabled {
+      $disabled-color: darken($color, 15%);
+
+      background-color: $disabled-color;
+      opacity: .5;
+
+      &:hover {
+        background-color: $disabled-color;
+      }
+    }
+  }
+}
+
+.white-button {
+  @include base-light-button($rgb-238, lighten($rgb-238, 10%));
+}
+
+.light-button {
+  @include base-light-button($green, tint($green, 20%));
+}
+
+.dark-button {
+  @include resize();
+
+  margin: 0 5px;
+
+  & button {
+    background-color: $dark-button;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 12px;
+    transition: .2s ease all;
+
+    & span {
+      font-size: 1em;
+    }
+
+    .icon-style {
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: $dark-button-hover;
+    }
+
+    &:active {
+      background-color: $dark-button-active;
+      transform: translateY(2px);
+    }
+
+    &:hover progress::-webkit-progress-value {
+      background-color: $rgb-0;
+    }
+
+    &:hover progress::-moz-progress-bar {
+      background-color: $rgb-0;
+    }
+  }
+}
+
+.button {
+  align-items: center;
+  background: $background-color;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-family: $dinpro-font;
+  font-weight: bold;
+  height: 2.91em;
+
+  span {
+    font-size: 1em;
+    line-height: 1.31;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  .icon-style {
+    fill: $white;
+  }
+
+  .icon-container {
+    padding-left: 10px;
+
+    svg {
+      height: 1.15rem;
+      transform: translateY(1px);
+      vertical-align: sub;
+    }
+  }
+
+  .left-icon-container {
+    margin-right: 12px;
+
+    svg {
+      vertical-align: sub;
+    }
+  }
+}
+
+.text-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: .2rem 0 1.1rem;
+  transition: .2s ease all;
+
+  & span {
+    color: $green;
+    font-family: $medium-font;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: .3px;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      transform: translateY(-2px);
+
+      & span {
+        color: tint($green, 20%);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &:disabled {
+    & span {
+      opacity: .5;
+    }
+  }
+}
+
+.button-spinner-container {
+  align-items: center;
+  display: flex;
+  height: 1.8rem;
+  justify-content: center;
+  padding: 4px 1.5rem;
+
+  .button-spinner {
+    background: transparent;
+    height: auto;
+    width: auto;
+  }
+}

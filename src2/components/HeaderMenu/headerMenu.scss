@@ -1,0 +1,54 @@
+@import '~#/theme/base.scss';
+$menu-inactive: $rgb-160;
+
+.toggle {
+  @include responsive(medium-screens) {
+    display: block;
+    position: absolute;
+    right: 26px;
+    top: 14px;
+  }
+
+  display: none;
+}
+
+.container {
+  @include responsive(medium-screens) {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  color: $menu-inactive;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-top: 0;
+  position: relative;
+  width: 100%;
+  z-index: $header-menu-z-index;
+}
+
+.menu-container {
+  display: inline-block;
+  height: 2.6rem;
+  margin: 0 1rem;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+}
+
+.menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+.light {
+  &.expanded {
+    .toggle {
+      @include responsive(medium-screens) {
+        top: 24px;
+      }
+    }
+  }
+}

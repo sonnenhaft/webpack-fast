@@ -1,0 +1,35 @@
+@import '~#/theme/variables/colors.scss';
+
+.navigation-button {
+  background: $background-color;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  height: 80px;
+  opacity: .6;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  top: 416px;
+  transition: opacity 200ms;
+  width: 52px;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  svg {
+    opacity: .5;
+  }
+
+  &:hover,
+  &:hover svg {
+    opacity: 1;
+  }
+
+  .right {
+    transform: rotate(180deg);
+  }
+}

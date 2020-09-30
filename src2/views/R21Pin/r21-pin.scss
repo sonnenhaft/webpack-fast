@@ -1,0 +1,74 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+$horizontal-padding: 2.5rem;
+
+.main-container {
+  position: relative;
+}
+
+.main-title {
+  @include main-title();
+}
+
+.step-visualizer {
+  @include responsive(small-screens) {
+    left: .9rem;
+  }
+
+  height: 100%;
+  left: 5.5rem;
+  position: absolute;
+  top: 9.4rem;
+
+  .step-circle {
+    background-color: #eee;
+    border-radius: 50%;
+    display: block;
+    height: .8rem;
+    width: .8rem;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+  }
+
+  .step-line {
+    @include responsive(small-screens) {
+      height: 35%;
+    }
+
+    border-left: 2px solid rgb(105, 108, 109);
+    height: 31%;
+    margin: 0 auto;
+    width: 0;
+  }
+}
+
+.pin-input {
+  margin: 1.6rem 0;
+  transform: translateX(-8px);
+}
+
+.dob-button {
+  & button {
+    width: 11.4rem;
+  }
+}
+
+.top-progress-bar {
+  border-top: 1.5px solid rgb(156, 203, 95);
+  height: 0;
+  position: absolute;
+  top: 0;
+}
+
+.r21-spinner {
+  height: 75vh;
+}
+
+.set-pin-spinner {
+  height: 15vh;
+  width: 27%;
+}

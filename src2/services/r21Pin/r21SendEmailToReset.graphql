@@ -1,0 +1,5 @@
+mutation r21ResetEmail {
+  r21Pin {
+    sendEmailToReset
+  }
+}

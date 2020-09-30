@@ -1,0 +1,4 @@
+mutation AddToFavourites($channelId: String!, $programId: String!) {
+  addChannel: addToFavourites(id: $channelId)
+  addProgram: addToFavourites(id: $programId)
+}

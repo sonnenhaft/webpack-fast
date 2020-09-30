@@ -1,0 +1,48 @@
+@import '~#/theme/base.scss';
+
+.page-footer {
+  @include responsive(small-screens) {
+    bottom: 15px;
+  }
+
+  align-items: center;
+  bottom: 0;
+  color: $grey-63;
+  display: flex;
+  font-family: 'DINPro-Regular', sans-serif;
+  font-size: .8em;
+  justify-content: center;
+  min-height: 75px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  .copy-right {
+    @include responsive(small-screens) {
+      bottom: 60px;
+      position: absolute;
+    }
+  }
+
+  & span {
+    @include responsive(small-screens) {
+      padding: 0 10px;
+    }
+
+    padding: 0 15px;
+  }
+
+  & a {
+    @include responsive(small-screens) {
+      padding: 0 10px;
+    }
+
+    color: $grey-63;
+    padding: 0 15px;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+query webPackDetails($packId: String) {
+  packDetails (packId: $packId) {
+    denomination
+    description
+    image
+    price
+    productId
+    productRefs
+    purchasableUfinityProduct {
+      priceFinal
+      productId
+    }
+    subTitle
+    tAndCText
+    title: displayText
+    whatsInsideCTA
+    whatsInsideCTAParam
+  }
+}

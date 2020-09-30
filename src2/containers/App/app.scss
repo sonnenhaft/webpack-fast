@@ -1,0 +1,54 @@
+@import '~#/theme/themes/light/colors.scss';
+@import '~#/theme/variables/colors.scss';
+@import '~#/theme/fonts.scss';
+
+body,
+html {
+  font-family: $dinpro-font;
+  height: 100%;
+  width: 100%;
+}
+
+.root {
+  margin: 0 auto;
+  overflow: auto;
+  overflow-x: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+:global(.link) {
+  text-decoration: none;
+}
+
+:global(.link:hover) {
+  text-decoration: underline;
+}
+
+.spinner {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+}
+
+.dark {
+  &.root {
+    background-color: $background-color;
+    color: $white;
+  }
+
+  :global(.link) {
+    color: $rgb-150;
+  }
+}
+
+.light {
+  &.root {
+    background-color: $light-theme-color-content;
+    color: $rgb-40;
+  }
+
+  :global(.link) {
+    color: $rgb-150;
+  }
+}

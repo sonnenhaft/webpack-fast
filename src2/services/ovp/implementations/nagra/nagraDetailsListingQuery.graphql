@@ -1,0 +1,38 @@
+query webDetailsListing($id: String!) {
+  details(id: $id) {
+    __typename
+    title
+    page: detailsPage {
+      containers: containersData {
+        action
+        cardType
+      }
+    }
+    ...listingSeriesFragment
+    ...listingEditorialFragment
+  }
+}
+
+fragment listingSeriesFragment on SeriesNode {
+  episodes {
+    ...episodeFragment
+  }
+}
+
+fragment listingEditorialFragment on Editorial {
+  series {
+    episodes {
+      ...episodeFragment
+    }
+  }
+}
+
+fragment episodeFragment on Editorial {
+  episodeNumber
+  id
+  image
+  title
+  ... on DetailsInterface {
+    productRefs
+  }
+}

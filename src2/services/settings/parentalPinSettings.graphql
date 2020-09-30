@@ -1,0 +1,13 @@
+query parentalSettingsQuery {
+  parentalPin {
+    isEnabled
+    settings {
+      restrictChannelsByPin
+      restrictContentByPin
+      restrictInAppPurchasesByPin
+    }
+  }
+  settings {
+    hasEmail
+  }
+}

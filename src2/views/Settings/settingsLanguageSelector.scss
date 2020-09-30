@@ -1,0 +1,92 @@
+@import '~#/theme/variables/colors.scss';
+$show-info-box-shadow: 0 1px 5px 0 $black-20, 0 3px 1px -2px $black-12,
+  0 2px 2px 0 $black-14;
+
+.preferences-container {
+  margin: 0 200px;
+
+  .preferences-top-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    text-transform: capitalize;
+  }
+
+  .preferences-divider {
+    border-bottom: 2px solid $button-focusable-background;
+    box-shadow: $show-info-box-shadow;
+    height: 9px;
+  }
+}
+
+.preferences-bottom-section {
+  display: flex;
+}
+
+.language-option-container {
+  display: flex;
+  flex-direction: column;
+  height: 4em;
+  margin-top: 1.5em;
+  position: relative;
+  width: 20em;
+
+  .language-radio-button-class {
+    height: 21px;
+    margin-left: 1.625em;
+
+    input {
+      height: 21px;
+      width: 21px;
+    }
+
+    .selected-language-radio-button {
+      height: 11px;
+      width: 11px;
+    }
+  }
+
+  .chevron-container {
+    margin-left: 4.25em;
+
+    .custom-chevron {
+      height: 16px;
+      transform: rotate(-90deg);
+      width: 16px;
+
+      .custom-chevron-path {
+        opacity: 1;
+      }
+    }
+  }
+
+  span {
+    color: $grey-86;
+    font-size: 1.125em;
+    margin-bottom: .375em;
+    vertical-align: middle;
+  }
+}
+
+.language-option-save-btn {
+  margin-top: 5.5em;
+
+  button {
+    padding: .625rem 1.625rem;
+
+    span {
+      font-size: 1em;
+      text-transform: uppercase;
+    }
+
+    &:disabled {
+      background-color: $grey-38;
+
+      &:hover {
+        background-color: $grey-38;
+      }
+    }
+  }
+}

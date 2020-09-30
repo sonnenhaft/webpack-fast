@@ -1,0 +1,84 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+
+.fade-in {
+  opacity: 0;
+  transition: opacity .2s ease-in;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+
+.search-input-container {
+  align-items: center;
+  display: flex;
+  padding: 3rem 0 3rem 4rem;
+  position: relative;
+
+  .search-input {
+    background-color: transparent;
+    border: 1.5px solid $grey-63;
+    border-radius: 3px;
+    color: $grey-63;
+    font-family: $regular-font;
+    font-size: .9em;
+    height: 2rem;
+    outline: none;
+    padding: .3rem 3rem .3rem 2.5rem;
+    width: 87%;
+  }
+
+  .search-close-container {
+    cursor: pointer;
+    height: 1.2rem;
+    padding: 0 2.5rem;
+    transform: translateY(1px);
+    transition: .2s ease all;
+
+    .search-close-icon {
+      fill: #eee;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .search-icon-container {
+    bottom: 3.72rem;
+    left: 5rem;
+    position: absolute;
+
+    & svg {
+      height: .8rem;
+      width: .8rem;
+    }
+  }
+
+  .search-icon {
+    fill: #eee;
+  }
+}
+
+.no-results {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'DINPro-Regular';
+  padding: 4rem 6rem 12rem 4rem;
+
+  & h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  & p {
+    margin: 1rem 0;
+  }
+}
+
+.search-spinner {
+  height: 60vh;
+}

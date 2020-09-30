@@ -1,0 +1,22 @@
+@import '~#/theme/variables/colors.scss';
+
+body {
+  background-color: $background-color;
+}
+
+.error-boundary {
+  margin: 8px;
+}
+
+.error-boundary h3 {
+  color: white;
+}
+
+.error-boundary pre {
+  color: #d09e9e;
+  white-space: pre-wrap;
+}
+
+p {
+  color: $white;
+}

@@ -1,0 +1,6 @@
+query webStreamUrl($id: String!, $idType: IDType!, $deviceType: DeviceType) {
+  streamUrl(id: $id, idType: $idType, deviceType: $deviceType) {
+    drmID
+    uri
+  }
+}

@@ -1,0 +1,42 @@
+query settingsQuery {
+  settings {
+    nagraAccountInfo {
+      accountId
+      accountNumber
+      clientId
+      geoBlockExempt
+      status
+    }
+    parentalPinSettings {
+      isPinEnabled
+      restrictChannelsByPin
+      restrictContentByPin
+      restrictInAppPurchasesByPin
+    }
+    parentalRating
+    pins {
+      ParentalPin {
+        ...nagraPinDetailsFragment
+      }
+      R21Pin {
+        ...nagraPinDetailsFragment
+      }
+    }
+    restrictedChannels {
+      description
+      id
+      mainChannelId
+      title
+    }
+    ufinity {
+      email
+    }
+  }
+}
+
+fragment nagraPinDetailsFragment on NagraPin {
+  accountId
+  lastChangeDateTime
+  salt
+  type
+}

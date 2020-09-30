@@ -1,0 +1,8 @@
+mutation redeemVoucher($voucherCode: String!) {
+  redeemVoucher(voucherCode: $voucherCode) {
+    name
+    duration
+    endDate
+    status
+  }
+}

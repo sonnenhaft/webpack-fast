@@ -1,0 +1,3 @@
+mutation webPlayerTrackActivity($activity: UserActivity!, $contentId: String) {
+  trackActivityForRecommendation (activity: $activity, contentId: $contentId, deviceType: web)
+}

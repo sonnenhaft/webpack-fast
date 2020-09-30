@@ -1,0 +1,3 @@
+mutation RemoveFromFavourites($programId: String!) {
+  removeProgram: removeFromFavourites(id: $programId)
+}

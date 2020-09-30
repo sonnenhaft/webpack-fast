@@ -1,0 +1,297 @@
+@import '~#/theme/base.scss';
+@import '~#/theme/fonts.scss';
+@import '~#/theme/mixins/utils.scss';
+
+@mixin header-with-buttons {
+  @include main-title();
+
+  align-items: center;
+  display: flex;
+  height: 3.6rem;
+  justify-content: space-between;
+
+  .restrict-save-changes-button {
+    & button {
+      height: auto;
+    }
+
+    @include responsive(small-screens) {
+      & button {
+        & span {
+          font-size: .95em;
+        }
+      }
+    }
+  }
+
+  .restrict-lock-unlock-section {
+    @include responsive(small-screens) {
+      margin-right: unset;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+
+    & button {
+      height: auto;
+    }
+  }
+}
+
+.main-container {
+  position: relative;
+}
+
+.page-title {
+  @include main-title();
+
+  & h1 {
+    color: $rgb-238;
+    margin: 0;
+    margin-bottom: .4rem;
+  }
+
+  & span {
+    color: $grey-63;
+    font-size: .9em;
+    letter-spacing: .2px;
+  }
+
+  margin: 0;
+}
+
+.checkbox-section {
+  padding: .2rem 0 1.3rem;
+}
+
+.checkbox {
+  & input {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
+
+.parental-control-button {
+  & button {
+    min-width: 6.8rem;
+    width: 6.8rem;
+  }
+}
+
+.loading-spinner {
+  height: 75vh;
+}
+
+.restrict-header {
+  @include responsive(medium-screens) {
+    padding: 3rem 5rem 1rem;
+  }
+
+  @include responsive(small-screens) {
+    padding: 3rem 1rem 1rem;
+  }
+
+  @include header-with-buttons();
+
+  padding: 3rem 12rem 1rem;
+}
+
+.restrict-subsection {
+  @include responsive(medium-screens) {
+    padding: 0 5rem;
+  }
+
+  @include responsive(small-screens) {
+    padding: 0 1rem;
+  }
+
+  padding: 0 12rem;
+}
+
+.restrict-subsection-seperator {
+  @include responsive(medium-screens) {
+    margin: 0 4.8rem;
+  }
+
+  @include responsive(small-screens) {
+    margin: 0 .8rem;
+  }
+
+  margin: 0 12.1rem 0 11.8rem;
+}
+
+.ratings-container {
+  margin: 1.35rem 0;
+}
+
+.rating-item {
+  background-color: $device-mgmt-item;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 7px;
+  padding: .9rem 1.4rem;
+
+  .rating-title {
+    color: $rgb-238;
+    font-family: $regular-font;
+    font-size: 1.25em;
+    width: 12%;
+  }
+
+  .rating-option-container {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    span {
+      color: $grey-86;
+      font-size: .85em;
+    }
+  }
+
+  .rating-radio-button {
+    & input {
+      height: 19px;
+      width: 19px;
+    }
+
+    .rating-radio-selected {
+      height: 47%;
+      width: 47%;
+    }
+  }
+}
+
+.rating-r21-item {
+  margin-top: 1rem;
+}
+
+.pin-input-container {
+  height: 2.9rem;
+}
+
+.text-button {
+  padding: .5rem 0 1.5rem;
+
+  & span {
+    font-size: 1.1em;
+  }
+}
+
+.restrict-channels-header {
+  @include header-with-buttons();
+
+  padding: 3rem 7rem 1rem;
+
+  @include responsive(medium-screens) {
+    padding: 3rem 2rem 1rem;
+  }
+
+  @include responsive(small-screens) {
+    flex-direction: column;
+    height: 9rem;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  .channels-header-buttons {
+    display: flex;
+  }
+}
+
+.channels-subsection-seperator {
+  @include responsive(medium-screens) {
+    margin: 0 2.5rem 0 1.9rem;
+  }
+
+  @include responsive(small-screens) {
+    margin: 0 .8rem;
+  }
+
+  margin: 0 7.5rem 0 6.9rem;
+}
+
+.restrict-channels-subsection {
+  @include responsive(medium-screens) {
+    padding: 0 2rem;
+  }
+
+  @include responsive(small-screens) {
+    padding: 0 1rem;
+  }
+
+  padding: 0 7rem;
+}
+
+.restricted-channel-item {
+  @include responsive(medium-screens) {
+    width: 100%;
+  }
+
+  background-color: $device-mgmt-item;
+  border-radius: 5px;
+  box-shadow:
+    0 1px 5px 0 $black-20,
+    0 3px 1px -2px $black-12,
+    0 2px 2px 0 $black-14;
+  display: flex;
+  justify-content: flex-start;
+  margin: .4rem .8rem .4rem 0;
+  padding: .5rem 1rem .5rem .5rem;
+  width: 475px;
+
+  .channel-image {
+    height: auto;
+    max-height: 2.2rem;
+    width: 4rem;
+  }
+
+  .channel-title {
+    display: block;
+    margin: auto 1rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 10rem;
+  }
+
+  .channel-num {
+    @include responsive(small-screens) {
+      margin-left: .5rem;
+    }
+
+    display: block;
+    margin: auto 0 auto 2.5rem;
+  }
+
+  .channel-checkbox {
+    margin: auto 0 auto .7rem;
+    width: auto;
+
+    & input {
+      height: 19px;
+      width: 19px;
+    }
+  }
+
+  .channel-metadata-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+}
+
+.restrict-channels-spinner {
+  height: 55vh;
+  width: auto;
+}
+
+.set-pin-spinner {
+  height: 13vh;
+  width: 33%;
+}

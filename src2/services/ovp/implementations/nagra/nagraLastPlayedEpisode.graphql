@@ -1,0 +1,15 @@
+query webLastPlayedEpisode($id: String!) {
+  lastPlayedEpisode: details(id: $id) {
+    description
+    duration
+    id
+    rating
+    ...detailAdditionalInfoFragment
+  }
+}
+
+fragment detailAdditionalInfoFragment on Editorial {
+  episodeNumberAndTitle
+  episodeNumber
+  seasonNumber
+}

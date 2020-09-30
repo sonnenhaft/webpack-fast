@@ -1,0 +1,21 @@
+@import '~#/theme/base.scss';
+
+.custom-dimension {
+  @include responsive(small-screens) {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  height: 415px;
+  padding: 5em 0;
+  width: 53.5vw;
+}
+
+a.terms-and-conditions-link {
+  color: $green;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

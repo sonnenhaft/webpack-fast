@@ -1,0 +1,17 @@
+fragment tokenFields on LoginResponse {
+  token
+  refreshToken
+  tokenExpiresIn
+  refreshTokenExpiresIn
+}
+
+mutation refreshToken($ufinityRefreshToken: String, $nagraRefreshToken: String) {
+  refreshToken(ufinityRefreshToken: $ufinityRefreshToken, nagraRefreshToken: $nagraRefreshToken) {
+    ufinity {
+      ...tokenFields
+    }
+    nagra {
+      ...tokenFields
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '~#/theme/base.scss';
+
+.page-title {
+  @include main-title();
+}
+
+.voucher-input {
+  margin: 1.2rem 0 .65rem;
+  width: 14rem;
+}
+
+.redeem-button {
+  & button {
+    min-width: 4rem;
+    text-transform: uppercase;
+    width: 6rem;
+  }
+}
+
+.voucher-spinner {
+  height: 25vh;
+  justify-content: flex-start;
+  margin-left: 5.8rem;
+}

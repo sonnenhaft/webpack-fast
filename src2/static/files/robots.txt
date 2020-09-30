@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /apple-app-site-association
+Disallow: /device-management
+Disallow: /health/
+Disallow: /parental-control
+Disallow: /purchase-completed/
+Disallow: /r21-pin
+Disallow: /restrict-by-channels
+Disallow: /restrict-by-ratings
+Disallow: /settings/
+Disallow: /transactions

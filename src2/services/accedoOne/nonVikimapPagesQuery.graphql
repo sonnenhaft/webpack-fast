@@ -1,0 +1,19 @@
+query nonVikimap {
+  accedoOne {
+    pages {
+      pageData {
+        displayText
+        filterlist
+        filterListData {
+          title
+          valueData {
+            title
+            name
+            value
+          }
+        }
+        pageid
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import './responsive.scss';
+@import '../variables/colors.scss';
+
+@mixin page-seperator($horizontal-margin) {
+  background-color: $rgba-7;
+  flex: 1;
+  height: 2px;
+  margin: 0 $horizontal-margin;
+  max-height: 2px;
+  transform: translateX(3px);
+}
+
+@mixin main-title() {
+  @include responsive(small-screens) {
+    padding: 4rem 2rem 1rem;
+  }
+
+  padding: 4rem 8rem 1rem;
+
+  & h1 {
+    color: $rgb-238;
+    font-family: 'DINPro-Medium', sans-serif;
+    font-size: 2em;
+  }
+}
+
+@function tint($color, $percent) {
+  @return mix(white, $color, $percent);
+}

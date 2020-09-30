@@ -1,0 +1,40 @@
+@import '~#/theme/base.scss';
+$input-color: $rgb-238;
+
+.radio-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  .selected-radio-button {
+    background: $green;
+    border-radius: 50%;
+    display: none;
+    height: 8px;
+    position: absolute;
+    right: 25%;
+    top: 5px;
+    width: 8px;
+  }
+
+  & input {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid $input-color;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    margin: 0;
+    outline: none;
+    padding: .375rem;
+    position: relative;
+    width: 16px;
+
+    &:checked {
+      ~ .selected-radio-button {
+        display: block;
+      }
+    }
+  }
+}
